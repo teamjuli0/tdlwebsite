@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import menuIcon from '../images/menuIcon.png'
-import tabernaculoIcon from '../images/roundCross.png'
+import { MenuIcon, RoundCross } from '../../images/logosAndIcons'
 
 const Navbar = props => (
   <nav
@@ -13,7 +12,7 @@ const Navbar = props => (
   >
     <a className='navbar-brand' href='/'>
       <img
-        src={tabernaculoIcon}
+        src={RoundCross}
         style={{
           height: '6vh'
         }}
@@ -31,7 +30,7 @@ const Navbar = props => (
       style={{ border: 0 }}
     >
       <img
-        src={menuIcon}
+        src={MenuIcon}
         alt=''
         style={{
           height: '3vh'

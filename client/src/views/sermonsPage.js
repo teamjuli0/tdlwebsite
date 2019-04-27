@@ -1,18 +1,21 @@
 import React from 'react'
 
-import { YoutubeMain, Navbar, ActivityCard, VerticalDivider, Firebase } from '../components'
+import { Firebase } from '../components/google'
+import { YoutubeMain } from '../components/youtube'
+import { ActivityCard } from '../components/infoCards'
+import { Navbar, VerticalDivider } from '../components/bootstrap'
 
-import Bg1 from '../images/bg1.png'
-import Bg2 from '../images/bg2.png'
-import Bg3 from '../images/bg3.png'
-import axelIcon from '../images/axelIcon.png'
-import mikeIcon from '../images/mikeIcon.png'
-import yadiIcon from '../images/yadiIcon.png'
-import julioIcon from '../images/julioIcon.png'
-import mariaIcon from '../images/mariaIcon.png'
-import silviaIcon from '../images/silviaIcon.png'
-import neftaliIcon from '../images/neftaliIcon.png'
-import tabernaculoIcon from '../images/tabernaculoIcon.png'
+import { Bg1, Bg2, Bg3 } from '../images/backgrounds'
+import {
+  AxelIcon,
+  MikeIcon,
+  YadiIcon,
+  JulioIcon,
+  MariaIcon,
+  SilviaIcon,
+  NeftaliIcon,
+  TabernaculoIcon
+} from '../images/roundIcons'
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
@@ -50,21 +53,21 @@ class Sermons extends React.Component {
   renderSwitch(param) {
     switch (param) {
       case 'Pastor Mike':
-        return mikeIcon
+        return MikeIcon
       case 'Pastor Julio':
-        return julioIcon
+        return JulioIcon
       case 'Pastor Axel':
-        return axelIcon
+        return AxelIcon
       case 'Hermana Silvia':
-        return silviaIcon
+        return SilviaIcon
       case 'Pastora Yadi':
-        return yadiIcon
+        return YadiIcon
       case 'Pastor Neftali':
-        return neftaliIcon
+        return NeftaliIcon
       case 'Pastora Maria':
-        return mariaIcon
+        return MariaIcon
       default:
-        return tabernaculoIcon
+        return TabernaculoIcon
     }
   }
 

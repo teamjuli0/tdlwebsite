@@ -1,13 +1,12 @@
 import React from 'react'
-import { Button, Navbar } from '../components'
-import Mike from '../images/mike.jpg'
-import Julio from '../images/julio.jpg'
-import Axel from '../images/axel.jpg'
-import Eating from '../images/sittingEating.jpg'
-import Beach from '../images/beach.jpg'
-import DownArrow from '../images/downArrow.png'
 import BackgroundSlider from 'react-background-slider'
-import { Map } from '../components'
+
+import { Navbar } from '../components/bootstrap'
+import { Map } from '../components/maps'
+
+import { Mike, Julio, Axel, Eating, Beach } from '../images/slideshowBackground'
+
+import { DownArrow } from '../images/logosAndIcons'
 
 class LandingPage extends React.Component {
   render() {
