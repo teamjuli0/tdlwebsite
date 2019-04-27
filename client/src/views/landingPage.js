@@ -10,14 +10,6 @@ import BackgroundSlider from 'react-background-slider'
 import { Map } from '../components'
 
 class LandingPage extends React.Component {
-  scrollToAboutUs = () =>
-    window.scrollTo({
-      left: 0,
-      top: window.innerHeight * 3,
-      behavior: 'smooth'
-    })
-  scrollToFindUs = () => window.scrollTo({ left: 0, top: window.innerHeight, behavior: 'smooth' })
-
   render() {
     return (
       <div>
@@ -26,27 +18,74 @@ class LandingPage extends React.Component {
           images={[Julio, Eating, Mike, Axel, Beach]}
           duration={7}
           transition={1}
-          style={{ height: '55vh' }}
+          style={{ height: '80vh' }}
         />
         <div style={styles.background}>
           <div className='container'>
             <div className='row'>
               <div className='col-sm'>
-                <h3 style={styles.smallHeader}>CUANDO TU LE HABLAS</h3>
-                <h1 style={styles.largeHeader}>JESUS ESCUCHA</h1>
+                <p style={styles.smallHeader}>CUANDO TU LE HABLAS</p>
+                <p style={styles.largeHeader}>JESUS ESCUCHA</p>
               </div>
             </div>
             <div className='row'>
               <div className='col-sm' style={styles.buttonRow}>
-                <Button name='Sermones' onClick={this.scrollToFindUs} />
-                <Button name='Horarios' onClick={this.scrollToAboutUs} />
+                <a
+                  style={{
+                    margin: 5,
+                    marginTop: 0
+                  }}
+                  href='/sermones'
+                  className='btn btn-light'
+                >
+                  Sermones
+                </a>
+                <a
+                  style={{
+                    margin: 5,
+                    marginTop: 0
+                  }}
+                  href='/sermones'
+                  className='btn btn-light'
+                >
+                  Horarios
+                </a>
+              </div>
+            </div>
+            <div className='row'>
+              <div
+                style={{
+                  margin: 'auto',
+                  marginTop: '7vh',
+                  fontFamily: 'Montserrat, sans-serif',
+                  width: '50vh',
+                  textAlign: 'right'
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: 27,
+                    fontWeight: 'bold',
+                    letterSpacing: '1px',
+                    paddingBottom: '1vh'
+                  }}
+                >
+                  Esforzaos todos vosotros los que esperáis en Jehová, Y tome aliento vuestro corazón.
+                </p>
+                <p
+                  style={{
+                    fontSize: 13
+                  }}
+                >
+                  |RVR1960|Salmos 31:24
+                </p>
               </div>
             </div>
             <div className='row'>
               <div className='col-sm bounce'>
                 <img
                   style={{
-                    marginTop: '10vh'
+                    marginTop: '15vh'
                   }}
                   width='40'
                   height='40'
@@ -116,7 +155,7 @@ class LandingPage extends React.Component {
 
 const styles = {
   smallHeader: {
-    paddingTop: '10vh',
+    paddingTop: '15vh',
     fontSize: 20
   },
   largeHeader: {
@@ -129,7 +168,7 @@ const styles = {
   background: {
     // backgroundImage: `url(${Background})`,
     display: 'block',
-    height: '47vh',
+    height: '80vh',
     backgroundSize: 'cover',
     textAlign: 'center',
     color: '#ecedee'

@@ -27,7 +27,14 @@ class AboutUs extends React.Component {
                 textAlign: 'center'
               }}
             >
-              <p>SERMONES</p>
+              <a
+                style={{
+                  color: '#4c4c4c'
+                }}
+                href='/sermones'
+              >
+                SERMONES
+              </a>
             </div>
             <div
               className='col-sm'
@@ -36,7 +43,14 @@ class AboutUs extends React.Component {
                 textAlign: 'center'
               }}
             >
-              <p>SOBRE NOSOTROS</p>
+              <a
+                style={{
+                  color: '#4c4c4c'
+                }}
+                href='/nosotros'
+              >
+                SOBRE NOSOTROS
+              </a>
             </div>
             <div
               className='col-sm'
@@ -45,7 +59,14 @@ class AboutUs extends React.Component {
                 textAlign: 'center'
               }}
             >
-              <p>LOCACION</p>
+              <a
+                style={{
+                  color: '#4c4c4c'
+                }}
+                href='/direciones'
+              >
+                LOCACION
+              </a>
             </div>
             <div
               className='col-sm'
@@ -54,7 +75,14 @@ class AboutUs extends React.Component {
                 textAlign: 'center'
               }}
             >
-              <p>CONTACTANOS!</p>
+              <a
+                style={{
+                  color: '#4c4c4c'
+                }}
+                href='/contactanos'
+              >
+                CONTACTANOS!
+              </a>
             </div>
           </div>
           <div
@@ -78,36 +106,64 @@ class AboutUs extends React.Component {
                 className='col-sm'
                 style={{
                   textAlign: 'center',
-                  paddingTop: '5vh'
+                  paddingTop: '6vh'
                 }}
               >
-                <a href='https://www.facebook.com/tvcristianopentecostes.pentecostes'>
-                  <img
-                    src={`${FacebookLogo}`}
-                    style={{
-                      height: '4vh',
-                      borderRadius: '5px'
-                    }}
-                    alt=''
-                  />
+                <a
+                  style={{
+                    borderRadius: '5px',
+                    padding: '.5vh',
+                    paddingRight: '1.5vh',
+                    paddingLeft: '1.5vh',
+                    color: 'white',
+                    fontSize: 23,
+                    backgroundColor: '#363636',
+                    textDecoration: 'none'
+                  }}
+                  href='https://www.facebook.com/tvcristianopentecostes.pentecostes'
+                >
+                  facebook<span style={{ fontSize: 9 }}>©</span>
                 </a>
               </div>
               <div
                 className='col-sm'
                 style={{
                   textAlign: 'center',
-                  paddingTop: '5vh'
+                  paddingTop: '6vh'
                 }}
               >
-                <a href='https://www.youtube.com/channel/UCOQVMU-4ES1hnCs2Un--omg'>
-                  <img
-                    src={`${YoutubeLogo}`}
+                <a
+                  style={{
+                    borderRadius: '5px',
+                    padding: '.5vh',
+                    paddingRight: '1.5vh',
+                    paddingLeft: '1.5vh',
+                    color: 'white',
+                    fontSize: 23,
+                    backgroundColor: '#363636',
+                    textDecoration: 'none'
+                  }}
+                  href='https://www.youtube.com/channel/UCOQVMU-4ES1hnCs2Un--omg'
+                >
+                  <span>
+                    <img
+                      src={YoutubeLogo}
+                      alt=''
+                      style={{
+                        height: 20,
+                        paddingRight: '1vh'
+                      }}
+                    />
+                  </span>
+                  YouTube
+                  <span
                     style={{
-                      height: '4vh',
-                      borderRadius: '5px'
+                      paddingLeft: '.25vh',
+                      fontSize: 9
                     }}
-                    alt=''
-                  />
+                  >
+                    ©
+                  </span>
                 </a>
               </div>
             </div>
