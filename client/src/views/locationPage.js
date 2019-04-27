@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Navbar, MapDark, Button } from '../components'
+import { Navbar } from '../components/bootstrap'
+import { MapDark } from '../components/maps'
 
-import BgImg from '../images/locationBgImg.png'
+import { BgImg } from '../images/backgrounds'
 
 class LocationPage extends React.Component {
   render() {

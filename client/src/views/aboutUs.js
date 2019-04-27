@@ -1,7 +1,6 @@
 import React from 'react'
 
-import FacebookLogo from '../images/facebookLogoTransparent.png'
-import YoutubeLogo from '../images/youtubeLogoTransparent.png'
+import { YoutubeLogo } from '../images/logosAndIcons'
 
 class AboutUs extends React.Component {
   render() {

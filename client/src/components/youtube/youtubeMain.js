@@ -1,7 +1,9 @@
 import React from 'react'
-import YoutubePlayer from '../components/youtubePlayer'
-import PastorJulio from '../images/pastorJulioImage.jpg'
-import PastServiceCard from '../components/pastServiceCard'
+
+import { YoutubePlayer } from '../youtube'
+import { PastServiceCard } from '../infoCards'
+
+import { PastorJulio } from '../../images/misc'
 
 class Main extends React.Component {
   render() {

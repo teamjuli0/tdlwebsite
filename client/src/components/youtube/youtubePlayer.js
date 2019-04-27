@@ -1,8 +1,9 @@
 import React from 'react'
 import YouTube from 'react-youtube'
-import firebase from '../components/firebase'
 
-const database = firebase.database()
+import { Firebase } from '../google'
+
+const database = Firebase.database()
 const dayRef = database.ref('extras')
 
 class youtubePlayer extends React.Component {
@@ -25,7 +26,7 @@ class youtubePlayer extends React.Component {
     const xtr = day.xtr
 
     const opts = {
-      height: '100%',
+      height: '450px',
       width: '100%',
       playerVars: {
         autoplay: 0

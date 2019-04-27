@@ -1,0 +1,8 @@
+export { default as AxelIcon } from './axelIcon.png'
+export { default as JulioIcon } from './julioIcon.png'
+export { default as MariaIcon } from './mariaIcon.png'
+export { default as MikeIcon } from './mikeIcon.png'
+export { default as NeftaliIcon } from './neftaliIcon.png'
+export { default as SilviaIcon } from './silviaIcon.png'
+export { default as TabernaculoIcon } from './tabernaculoIcon.png'
+export { default as YadiIcon } from './yadiIcon.png'
