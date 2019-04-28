@@ -26,14 +26,30 @@ class youtubePlayer extends React.Component {
     const xtr = day.xtr
 
     const opts = {
-      height: '450px',
-      width: '100%',
+      height: 630,
+      width: 840,
       playerVars: {
         autoplay: 0
       }
     }
 
-    return <YouTube videoId={xtr.videoId} opts={opts} onReady={this._onReady} />
+    return (
+      <iframe
+        style={{
+          left: 0,
+          top: 0,
+          height: '100%',
+          width: '100%',
+          position: 'absolute'
+        }}
+        width='560'
+        height='315'
+        src={'https://www.youtube.com/embed/' + xtr.videoId}
+        frameborder='0'
+        allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+        allowfullscreen
+      />
+    )
   }
 
   _onReady(event) {
