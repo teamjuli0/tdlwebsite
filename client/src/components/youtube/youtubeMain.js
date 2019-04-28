@@ -13,7 +13,6 @@ class Main extends React.Component {
           className='row'
           style={{
             width: '100%',
-            minHeight: '55vh',
             margin: 'auto',
             marginTop: '2vh'
           }}
@@ -21,10 +20,10 @@ class Main extends React.Component {
           <div
             className='col-sm'
             style={{
-              padding: 0,
-              margin: 0,
-              marginBottom: '3vh',
-              borderRadius: '5px'
+              overflow: 'hidden',
+              paddingBottom: '56.25%',
+              position: 'relative',
+              height: 0
             }}
           >
             <YoutubePlayer />
@@ -33,11 +32,11 @@ class Main extends React.Component {
         <div
           className='row'
           style={{
-            paddingLeft: '2vh',
-            paddingBottom: '2vh'
+            paddingTop: '2vh',
+            paddingBottom: '4vh'
           }}
         >
-          <div id='carouselExampleIndicators' className='col-sm carousel slide carousel-fade' data-ride='carousel'>
+          {/* <div id='carouselExampleIndicators' className='col-sm carousel slide carousel-fade' data-ride='carousel'>
             <ol className='carousel-indicators'>
               <li data-target='#carouselExampleIndicators' data-slide-to='0' className='active' />
               <li data-target='#carouselExampleIndicators' data-slide-to='1' />
@@ -75,7 +74,7 @@ class Main extends React.Component {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
           <div
             className='col-sm'
             style={{

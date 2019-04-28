@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Firebase } from '../components/google'
-import { YoutubeMain } from '../components/youtube'
+import { YoutubeMain, YoutubePlayer } from '../components/youtube'
 import { ActivityCard } from '../components/infoCards'
 import { Navbar, VerticalDivider } from '../components/bootstrap'
 
@@ -19,6 +19,7 @@ import {
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
+const xtrRef = database.ref('extras')
 
 console.log(database)
 console.log(dayRef)
@@ -39,12 +40,18 @@ class Sermons extends React.Component {
       let wedRef = snapshot.val().wed
       let friRef = snapshot.val().fri
       let sunRef = snapshot.val().sun
-      let extrasRef = snapshot.val().extras
 
       this.setState({
         wed: wedRef,
         fri: friRef,
-        sun: sunRef,
+        sun: sunRef
+      })
+    })
+
+    xtrRef.on('value', snapshot => {
+      let extrasRef = snapshot.val()
+
+      this.setState({
         xtr: extrasRef
       })
     })
@@ -72,10 +79,11 @@ class Sermons extends React.Component {
   }
 
   render() {
-    const day = this.state
-    const wed = day.wed
-    const fri = day.fri
-    const sun = day.sun
+    const firebaseDb = this.state
+    const wed = firebaseDb.wed
+    const fri = firebaseDb.fri
+    const sun = firebaseDb.sun
+    const xtr = firebaseDb.xtr
 
     return (
       <>
@@ -88,7 +96,112 @@ class Sermons extends React.Component {
         >
           <Navbar />
           <div className='container'>
-            <YoutubeMain />
+            <div
+              className='row'
+              style={{
+                width: '100%',
+                margin: 'auto',
+                marginTop: '2vh'
+              }}
+            >
+              <div
+                className='col-sm'
+                style={{
+                  overflow: 'hidden',
+                  paddingBottom: '56.25%',
+                  position: 'relative',
+                  height: 0
+                }}
+              >
+                <YoutubePlayer />
+              </div>
+            </div>
+            <div
+              className='row'
+              style={{
+                paddingTop: '2vh',
+                paddingBottom: '4vh'
+              }}
+            >
+              {/* <div id='carouselExampleIndicators' className='col-sm carousel slide carousel-fade' data-ride='carousel'>
+            <ol className='carousel-indicators'>
+              <li data-target='#carouselExampleIndicators' data-slide-to='0' className='active' />
+              <li data-target='#carouselExampleIndicators' data-slide-to='1' />
+              <li data-target='#carouselExampleIndicators' data-slide-to='2' />
+            </ol>
+            <div className='carousel-inner'>
+              <div className='carousel-item active'>
+                <PastServiceCard
+                  className='d-block w-100'
+                  verse='Romanos 8:28'
+                  title='Sermon Title'
+                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
+                  preacher='Pastor Julio Venegas'
+                  image={PastorJulio}
+                />
+              </div>
+              <div className='carousel-item'>
+                <PastServiceCard
+                  className='d-block w-100'
+                  verse='Romanos 8:28'
+                  title='Sermon Title'
+                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
+                  preacher='Pastor Julio Venegas'
+                  image={PastorJulio}
+                />
+              </div>
+              <div className='carousel-item'>
+                <PastServiceCard
+                  className='d-block w-100'
+                  verse='Romanos 8:28'
+                  title='Sermon Title'
+                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
+                  preacher='Pastor Julio Venegas'
+                  image={PastorJulio}
+                />
+              </div>
+            </div>
+          </div> */}
+              <div
+                className='col-sm'
+                style={{
+                  paddingTop: ' 1vh',
+                  color: 'white'
+                }}
+              >
+                <p
+                  style={{
+                    marginBottom: '.5vh'
+                  }}
+                >
+                  Sermones
+                </p>
+                <p
+                  style={{
+                    fontSize: 30
+                  }}
+                >
+                  {xtr.sermonName}
+                </p>
+                <p
+                  style={{
+                    fontSize: 20,
+                    color: '#b2b2b2',
+                    marginBottom: '1vh'
+                  }}
+                >
+                  {xtr.preacher}
+                </p>
+                <p
+                  style={{
+                    fontSize: 15,
+                    color: '#7f7f7f'
+                  }}
+                >
+                  {xtr.date}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div
