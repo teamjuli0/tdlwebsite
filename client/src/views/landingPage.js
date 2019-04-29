@@ -61,7 +61,7 @@ class LandingPage extends React.Component {
                   textAlign: 'right'
                 }}
               >
-                <p
+                <div
                   style={{
                     fontSize: 27,
                     fontWeight: 'bold',
@@ -69,8 +69,11 @@ class LandingPage extends React.Component {
                     paddingBottom: '1vh'
                   }}
                 >
-                  Esforzaos todos vosotros los que esperáis en Jehová, Y tome aliento vuestro corazón.
-                </p>
+                  <p>Esforzaos todos vosotros los que</p>
+                  <p>esperáis en Jehová, Y tome</p>
+                  <p>aliento vuestro corazón.</p>
+                </div>
+
                 <p
                   style={{
                     fontSize: 13
