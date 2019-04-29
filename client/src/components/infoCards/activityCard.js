@@ -4,29 +4,28 @@ const card = props => (
     <div
       className={`col-sm` + props.Size}
       style={{
-        width: '49%',
-        maxWidth: '650px',
-        height: '37vh',
+        maxWidth: '275px',
+        minHeight: '37vh',
         margin: 'auto'
       }}
     >
       <div
         style={{
           height: '33vh',
-          margin: '2vh',
           backgroundImage: `url('${props.BgImage}')`,
           backgroundSize: 'cover',
-          webkitBoxShadow: '0 0 20px gray',
-          mozBoxShadow: '0 0 20px gray',
-          boxShadow: '0 0 20px gray',
-          fontFamily: 'Fira Sans, sans-serif'
+          fontFamily: 'Montserrat, sans-serif',
+          borderRadius: '10px'
         }}
       >
         <div
           style={{
             textAlign: 'right',
             height: '16vh',
-            padding: '2vh'
+            borderRadius: '10px',
+            webkitBoxShadow: '0 0 20px #3c3c3c',
+            mozBoxShadow: '0 0 20px #3c3c3c',
+            boxShadow: '0 0 20px #3c3c3c'
           }}
         >
           <img
@@ -39,42 +38,83 @@ const card = props => (
         </div>
         <div
           style={{
-            height: '17vh',
+            minHeight: '17vh',
             paddingLeft: '2vh',
-            color: 'black',
-            backgroundColor: 'white'
+            paddingBottom: '2vh',
+            color: '#e9e9e9',
+            backgroundColor: '#3c3c3c',
+            borderRadius: '0 0 9px 9px ',
+            fontWeight: 'bold',
+            webkitBoxShadow: '0 0 20px #3c3c3c',
+            mozBoxShadow: '0 0 20px #3c3c3c',
+            boxShadow: '0 0 20px #3c3c3c'
           }}
         >
           <p
             style={{
-              paddingTop: '3vh'
+              fontFamily: 'Fira Sans, sans-serif',
+              paddingTop: '3vh',
+              fontWeight: 'bolder',
+              fontSize: 30,
+              paddingBottom: '1vh'
             }}
           >
             {props.Weekday}
           </p>
-          <p
-            style={{
-              paddingTop: '1vh'
-            }}
-          >
-            Alavansa:
-            <span style={{ color: '#515151' }}>{props.WorshipGroup}</span>
-          </p>
-          <p
-            style={{
-              paddingTop: '1vh'
-            }}
-          >
-            Predicador: <span style={{ color: '#515151' }}>{props.Preacher}</span>
-          </p>
-          <p
-            style={{
-              paddingTop: '1vh'
-            }}
-          >
-            Tiempo Especial:
-            <span style={{ color: '#515151' }}> {props.Verse}</span>
-          </p>
+          <div>
+            <p
+              style={{
+                paddingTop: '1vh',
+                color: '#7d7d7d'
+              }}
+            >
+              Alavansa:
+            </p>
+            <p
+              style={{
+                fontSize: 20,
+                color: '#d3d3d3'
+              }}
+            >
+              {props.WorshipGroup}
+            </p>
+          </div>
+          <div>
+            <p
+              style={{
+                paddingTop: '1vh',
+                color: '#7d7d7d'
+              }}
+            >
+              Predicador:
+            </p>
+            <p
+              style={{
+                color: '#d3d3d3',
+                fontSize: 20
+              }}
+            >
+              {props.Preacher}
+            </p>
+          </div>
+          <div>
+            <p
+              style={{
+                paddingTop: '1vh',
+                color: '#7d7d7d'
+              }}
+            >
+              Tiempo Especial:
+            </p>
+            <p
+              style={{
+                color: '#d3d3d3',
+                fontSize: 20
+              }}
+            >
+              {props.Verse}
+            </p>
+          </div>
         </div>
       </div>
     </div>
