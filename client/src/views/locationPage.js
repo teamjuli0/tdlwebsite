@@ -92,7 +92,8 @@ class LocationPage extends React.Component {
             className='container-fluid'
             style={{
               backgroundColor: '#212a36',
-              textAlign: 'center'
+              textAlign: 'center',
+              paddingBottom: '2vh'
             }}
           >
             <Navbar />
@@ -114,57 +115,59 @@ class LocationPage extends React.Component {
                     height: '40vh'
                   }}
                 />
-                <div className='col-sm-3'>
-                  <a
-                    href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
-                    role='button'
-                    class='btn btn-dark btn-block'
-                    style={{
-                      fontWeight: 'bolder',
-                      marginTop: '2.25vh'
-                    }}
-                  >
-                    Direciones
-                  </a>
-                </div>
-                <div className='col-sm-3'>
-                  <a
-                    href='/sermones'
-                    role='button'
-                    class='btn btn-dark btn-block'
-                    style={{
-                      fontWeight: 'bolder',
-                      marginTop: '2.25vh'
-                    }}
-                  >
-                    Sermones
-                  </a>
-                </div>
-                <div className='col-sm-3'>
-                  <a
-                    href='/sermones'
-                    role='button'
-                    class='btn btn-primary btn-block'
-                    style={{
-                      fontWeight: 'bolder',
-                      marginTop: '2.25vh'
-                    }}
-                  >
-                    Sobre Nosotros
-                  </a>
-                </div>
-                <div className='col-sm-3'>
-                  <button
-                    type='button'
-                    class='btn btn-danger btn-block'
-                    style={{
-                      fontWeight: 'bolder',
-                      marginTop: '2.25vh',
-                      alignItems: 'right'
-                    }}
-                  >
-                    1(800)555-5555
-                  </button>
+                <div>
+                  <div className='col-sm-3'>
+                    <a
+                      href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
+                      role='button'
+                      class='btn btn-dark btn-block'
+                      style={{
+                        fontWeight: 'bolder',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Direciones
+                    </a>
+                  </div>
+                  <div className='col-sm-3'>
+                    <a
+                      href='/sermones'
+                      role='button'
+                      class='btn btn-dark btn-block'
+                      style={{
+                        fontWeight: 'bolder',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Sermones
+                    </a>
+                  </div>
+                  <div className='col-sm-3'>
+                    <a
+                      href='/sermones'
+                      role='button'
+                      class='btn btn-primary btn-block'
+                      style={{
+                        fontWeight: 'bolder',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Sobre Nosotros
+                    </a>
+                  </div>
+                  <div className='col-sm-3'>
+                    <button
+                      type='button'
+                      class='btn btn-danger btn-block'
+                      style={{
+                        fontWeight: 'bolder',
+                        marginTop: '2.25vh',
+                        alignItems: 'right'
+                      }}
+                    >
+                      1(800)555-5555
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
