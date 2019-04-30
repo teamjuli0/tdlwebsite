@@ -57,7 +57,7 @@ class LandingPage extends React.Component {
                   margin: 'auto',
                   marginTop: '7vh',
                   fontFamily: 'Montserrat, sans-serif',
-                  width: '50vh',
+                  width: '60vh',
                   textAlign: 'right'
                 }}
               >

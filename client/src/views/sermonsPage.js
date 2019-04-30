@@ -97,7 +97,7 @@ class Sermons extends React.Component {
         <div
           style={{
             backgroundColor: '#1e1e1e',
-            paddingBottom: '8vh',
+            paddingBottom: '4vh',
             fontFamily: 'Cinzel, sans-serif'
           }}
         >
@@ -126,8 +126,7 @@ class Sermons extends React.Component {
             <div
               className='row'
               style={{
-                paddingTop: '2vh',
-                paddingBottom: '4vh'
+                paddingTop: '2vh'
               }}
             >
               <div
@@ -170,41 +169,7 @@ class Sermons extends React.Component {
                 </p>
               </div>
             </div>
-            <div className='row'>
-              <ActivityCard
-                Size='-4'
-                Icon={this.renderSwitch(wed.preacher)}
-                BgImage={Bg1}
-                Alt='Icon for Julio'
-                Weekday={wed.day}
-                Time={wed.time}
-                Preacher={wed.preacher}
-                WorshipGroup={wed.worshipGroup}
-                Verse={wed.verse}
-              />
-              <ActivityCard
-                Size='-4'
-                Icon={this.renderSwitch(fri.preacher)}
-                BgImage={Bg2}
-                Alt='Icon for Mike'
-                Weekday={fri.day}
-                Time={fri.time}
-                Preacher={fri.preacher}
-                WorshipGroup={fri.worshipGroup}
-                Verse={fri.verse}
-              />
-              <ActivityCard
-                Size='-4'
-                Icon={this.renderSwitch(sun.preacher)}
-                BgImage={Bg3}
-                Alt='Icon for Axel'
-                Weekday={sun.day}
-                Time={sun.time}
-                Preacher={sun.preacher}
-                WorshipGroup={sun.worshipGroup}
-                Verse={sun.verse}
-              />
-            </div>
+            <div className='row' />
           </div>
         </div>
         <div
