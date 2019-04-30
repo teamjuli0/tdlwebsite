@@ -1,10 +1,6 @@
 import React from 'react'
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 
-const defaultMapOptions = {
-  disableDefaultUI: true
-}
-
 const MapContainerDark = props => {
   return (
     <Map
@@ -91,7 +87,9 @@ const MapContainerDark = props => {
       ]}
       google={props.google}
       zoom={15}
-      defaultOptions={defaultMapOptions}
+      defaultOptions={{
+        disableDefaultUI: true
+      }}
       initialCenter={{
         lat: 33.9991905,
         lng: -118.291228
