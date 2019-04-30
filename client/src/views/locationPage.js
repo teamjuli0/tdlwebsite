@@ -117,15 +117,17 @@ class LocationPage extends React.Component {
                 />
                 <div
                   style={{
-                    paddingTop: '8vh'
+                    paddingTop: '6vh'
                   }}
                 >
                   <div className='col-sm-3'>
                     <a
                       href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
                       role='button'
-                      class='btn btn-dark btn-block'
+                      class='btn btn-block'
                       style={{
+                        backgroundColor: '#5d5d5d',
+                        color: 'white',
                         fontWeight: 'bolder',
                         marginTop: '2.25vh'
                       }}
@@ -137,8 +139,10 @@ class LocationPage extends React.Component {
                     <a
                       href='/sermones'
                       role='button'
-                      class='btn btn-dark btn-block'
+                      class='btn btn-block'
                       style={{
+                        backgroundColor: '#5d5d5d',
+                        color: 'white',
                         fontWeight: 'bolder',
                         marginTop: '2.25vh'
                       }}
