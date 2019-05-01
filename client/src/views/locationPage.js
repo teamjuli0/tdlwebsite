@@ -184,7 +184,7 @@ class LocationPage extends React.Component {
             className='container-fluid'
             style={{
               padding: '5vh',
-              paddingBottom: '8vh'
+              paddingBottom: '11vh'
             }}
           >
             <div className='row'>

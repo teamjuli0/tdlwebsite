@@ -2,7 +2,7 @@ import React from 'react'
 
 import { YoutubeLogo } from '../images/logosAndIcons'
 
-class AboutUs extends React.Component {
+class Footer extends React.Component {
   render() {
     return (
       <div style={styles.mainDiv}>
@@ -227,7 +227,7 @@ class AboutUs extends React.Component {
   }
 }
 
-export default AboutUs
+export default Footer
 
 const styles = {
   mainDiv: {
