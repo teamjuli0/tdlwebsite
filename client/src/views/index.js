@@ -1,4 +1,6 @@
 export { default as LandingPage } from './landingPage'
-export { default as AboutUs } from './aboutUs'
+export { default as Footer } from './footer'
 export { default as SermonsPage } from './sermonsPage'
 export { default as LocationPage } from './locationPage'
+export { default as AboutPage } from './aboutPage'
+export { default as PageNotFound } from './404'
