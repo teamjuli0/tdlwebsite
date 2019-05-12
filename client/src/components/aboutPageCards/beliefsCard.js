@@ -1,6 +1,19 @@
 import React from 'react'
 
-import { PastorMikeBg } from '../../images/backgrounds'
+import {
+  ChurchBenches,
+  ChurchBenches2,
+  HermanoAxel,
+  HermanoAxel2,
+  HermanoAxel3,
+  PastoraYady,
+  Pastores,
+  PastorJulio,
+  PastorJulio2,
+  PastorMike,
+  PastorMike2,
+  WorshipGroup
+} from '../../images/backgrounds'
 
 const beliefsCard = props => (
   <>
@@ -9,7 +22,7 @@ const beliefsCard = props => (
       style={{
         marginTop: '10vh',
         paddingTop: '2vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -25,9 +38,9 @@ const beliefsCard = props => (
         }}
       >
         <img
-          src={PastorMikeBg}
+          src={PastorMike}
           style={{
-            height: '200px',
+            width: '100%',
             border: '4px solid white',
             borderRadius: '5px'
           }}
@@ -78,7 +91,7 @@ const beliefsCard = props => (
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -110,19 +123,40 @@ const beliefsCard = props => (
           15:24,25,27
         </p>
       </div>
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        {' '}
+        <img
+          src={HermanoAxel}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
     </div>
     <div
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={WorshipGroup}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
       <div className='col-sm-7'>
         <p
           style={{
@@ -150,7 +184,7 @@ const beliefsCard = props => (
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -159,8 +193,9 @@ const beliefsCard = props => (
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -179,24 +214,45 @@ const beliefsCard = props => (
           1:22-23; San Juan 8:58-59, 10:30; 14:8,9; Apocalipsis 1:17-18.
         </p>
       </div>
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={PastorMike2}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
     </div>
     <div
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={ChurchBenches}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -221,7 +277,7 @@ const beliefsCard = props => (
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -230,8 +286,9 @@ const beliefsCard = props => (
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -255,24 +312,45 @@ const beliefsCard = props => (
           Génesis 6:5; Romanos 3:10-12
         </p>
       </div>
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={PastoraYady}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
     </div>
     <div
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={PastorJulio}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -297,7 +375,7 @@ const beliefsCard = props => (
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -306,8 +384,9 @@ const beliefsCard = props => (
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -327,24 +406,45 @@ const beliefsCard = props => (
           y actuar. San Mateo 3:8; San Lucas 5:32; Hechos 5:31; 11:18; 26:20; Romanos2:4.
         </p>
       </div>
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={HermanoAxel2}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
     </div>
     <div
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={ChurchBenches2}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -368,7 +468,7 @@ const beliefsCard = props => (
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
@@ -377,8 +477,9 @@ const beliefsCard = props => (
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -400,24 +501,45 @@ const beliefsCard = props => (
           la progresiva y la eterna. Hebreos 10:12-14; Filipenses 1:6; Filipenses 3:20.
         </p>
       </div>
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={PastorJulio2}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
     </div>
     <div
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={Pastores}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -445,17 +567,20 @@ const beliefsCard = props => (
       className='row'
       style={{
         paddingTop: '5vh',
-        backgroundColor: '#e5e5e5',
+
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+
+        paddingBottom: '5vh'
       }}
     >
       <div className='col-sm-7'>
         <p
           style={{
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 'bolder',
+            paddingBottom: '1vh',
             color: 'black'
           }}
         >
@@ -466,7 +591,8 @@ const beliefsCard = props => (
             fontSize: 15,
             fontWeight: 'bold',
             lineHeight: '25px',
-            color: '#727272'
+            color: '#727272',
+            paddingBottom: '4vh'
           }}
         >
           Los Dones del Espíritu Santo: Son capacidades sobrenaturales que Dios otorga a los creyentes para edificación
@@ -479,17 +605,19 @@ const beliefsCard = props => (
             fontSize: 15,
             fontWeight: 'bold',
             lineHeight: '25px',
-            color: '#727272'
+            color: '#727272',
+            paddingBottom: '2vh'
           }}
         >
-          1)Los Dones de Revelación: a)Palabra de Ciencia b)Palabra de Sabiduría c)Disernimiento de Espíritus
+          1)Los Dones de Revelación son la palabra de ciencia, palabra de sabiduría, y disernimiento de espíritus
         </p>
         <p
           style={{
             fontSize: 15,
             fontWeight: 'bold',
             lineHeight: '25px',
-            color: '#727272'
+            color: '#727272',
+            paddingBottom: '2vh'
           }}
         >
           2)Los Dones de Inspiración o Palabra: a)Géneros de Lenguas b)Interpretación de Lenguas c)Profecía
@@ -502,21 +630,22 @@ const beliefsCard = props => (
             color: '#727272'
           }}
         >
-          3)Los Dones de Poder: a)Dones de Sanidades b)Operación de Milagros c)Fe
-        </p>
-        <p
-          style={{
-            fontSize: 15,
-            fontWeight: 'bold',
-            lineHeight: '25px',
-            color: '#727272'
-          }}
-        >
-          Los Dones de Revelación: Son aquellos por medio de los cuales Dios comparte su conocimiento con su iglesia.
-          Hechos 5:3; 9:10-11; 10:19-20.
+          3)Los dones de poder son el don de sanidades, operación de milagros, y el don do fe. Los dones de revelación
+          son aquellos por medio de los cuales Dios comparte su conocimiento con su iglesia. Hechos 5:3; 9:10-11;
+          10:19-20.
         </p>
       </div>
-      <div className='col-sm-5' />
+      <div className='col-sm-5'>
+        <img
+          src={HermanoAxel3}
+          style={{
+            width: '100%',
+            border: '4px solid white',
+            borderRadius: '5px'
+          }}
+          alt=''
+        />
+      </div>
     </div>
   </>
 )

@@ -57,7 +57,7 @@ class LandingPage extends React.Component {
                   margin: 'auto',
                   marginTop: '7vh',
                   fontFamily: 'Montserrat, sans-serif',
-                  width: '80vh',
+                  width: '82vh',
                   paddingRight: '10vh',
                   textAlign: 'right'
                 }}
@@ -71,8 +71,8 @@ class LandingPage extends React.Component {
                   }}
                 >
                   <p>Esforzaos todos vosotros los que</p>
-                  <p>esperáis en Jehová, Y tome</p>
-                  <p>aliento vuestro corazón.</p>
+                  <p>Esperáis en Jehová, Y tome</p>
+                  <p>Aliento vuestro corazón</p>
                 </div>
 
                 <p

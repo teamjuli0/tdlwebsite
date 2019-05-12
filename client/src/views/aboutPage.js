@@ -52,7 +52,7 @@ class AboutPage extends React.Component {
           <div
             className='container-fluid'
             style={{
-              minHeight: '80vh',
+              minHeight: '60vh',
               backgroundColor: '#212a36',
               fontFamily: 'Montserrat, sans-serif'
             }}
@@ -118,11 +118,18 @@ class AboutPage extends React.Component {
                 ButtonText='Lideres'
               />
             </div>
-            <div>
-              {(this.state.isBeliefsState && <BeliefsCard />) ||
-                (this.state.isLeadersState && <LeadersCard />) ||
-                (this.state.isValuesState && <ValuesCard />)}
-            </div>
+          </div>
+          <div
+            className='container-fluid'
+            style={{
+              paddingRight: '2vh',
+              paddingLeft: '2vh',
+              backgroundImage: 'linear-gradient(to bottom, #e5e5e5, white)'
+            }}
+          >
+            {(this.state.isBeliefsState && <BeliefsCard />) ||
+              (this.state.isLeadersState && <LeadersCard />) ||
+              (this.state.isValuesState && <ValuesCard />)}
           </div>
         </div>
       </>

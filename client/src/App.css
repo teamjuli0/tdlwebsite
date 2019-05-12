@@ -88,3 +88,7 @@ p {
     -webkit-transform: translateY(0%);
   }
 }
+
+.gradientBgAboutPage {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
