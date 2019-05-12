@@ -152,7 +152,7 @@ class LocationPage extends React.Component {
                   </div>
                   <div className='col-sm-3'>
                     <a
-                      href='/sermones'
+                      href='/nosotros'
                       role='button'
                       class='btn btn-primary btn-block'
                       style={{

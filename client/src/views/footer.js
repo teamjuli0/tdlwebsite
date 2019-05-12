@@ -176,19 +176,39 @@ class Footer extends React.Component {
             >
               <div className='col-sm-2' />
               <div className='col-sm'>
-                <p style={{ marginTop: '3vh', fontWeight: 900 }}>Sobre Nosotros</p>
+                <p
+                  style={{
+                    marginTop: '3vh',
+                    fontWeight: 900
+                  }}
+                >
+                  Sobre Nosotros
+                </p>
+
                 <ul style={{ paddingTop: '1vh' }}>
-                  <li style={{ marginTop: '3vh' }}>Creencias</li>
-                  <li style={{ marginTop: '3vh' }}>Valores</li>
-                  <li style={{ marginTop: '3vh' }}>Lideres</li>
+                  <li style={{ marginTop: '3vh' }}>
+                    <a href='/nosotros'>Creencias</a>
+                  </li>
+                  <li style={{ marginTop: '3vh' }}>
+                    <a href='/nosotros'>Valores</a>
+                  </li>
+                  <li style={{ marginTop: '3vh' }}>
+                    <a href='/nosotros'>Lideres</a>
+                  </li>
                 </ul>
               </div>
               <div className='col-sm'>
                 <p style={{ marginTop: '3vh', fontWeight: 900 }}>Mas Referencias</p>
                 <ul style={{ paddingTop: '1vh' }}>
-                  <li style={{ marginTop: '3vh' }}>Contactanos</li>
-                  <li style={{ marginTop: '3vh' }}>Eventos</li>
-                  <li style={{ marginTop: '3vh' }}>Consorcio</li>
+                  <li style={{ marginTop: '3vh' }}>
+                    <a href='/contatanos'>Contactanos</a>
+                  </li>
+                  <li style={{ marginTop: '3vh' }}>
+                    <a href='/eventos'>Eventos</a>
+                  </li>
+                  <li style={{ marginTop: '3vh' }}>
+                    <a href='/consorcio'>Consorcio</a>
+                  </li>
                 </ul>
               </div>
               <div className='col-sm'>

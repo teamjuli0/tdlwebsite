@@ -28,6 +28,13 @@
 
 a {
   text-decoration: none !important;
+  color: #4c4c4c;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 p {
