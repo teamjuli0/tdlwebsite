@@ -4,10 +4,12 @@ import { Navbar } from '../components/bootstrap'
 import { AboutCard } from '../components/infoCards'
 import { BeliefsCard, ValuesCard, LeadersCard } from '../components/aboutPageCards'
 
+import { DownArrow } from '../images/logosAndIcons'
+
 class AboutPage extends React.Component {
   state = {
-    isEmptyState: false,
-    isBeliefsState: true,
+    isEmptyState: true,
+    isBeliefsState: false,
     isValuesState: false,
     isLeadersState: false
   }
@@ -52,7 +54,7 @@ class AboutPage extends React.Component {
           <div
             className='container-fluid'
             style={{
-              minHeight: '60vh',
+              minHeight: '55vh',
               backgroundColor: '#212a36',
               fontFamily: 'Montserrat, sans-serif'
             }}
@@ -96,7 +98,7 @@ class AboutPage extends React.Component {
               className='row'
               style={{
                 margin: 'auto',
-                marginTop: '10vh'
+                marginTop: '5vh'
               }}
             >
               <AboutCard
@@ -117,6 +119,17 @@ class AboutPage extends React.Component {
                 Description='Conoce Quienes Son Nuestros Lideres'
                 ButtonText='Lideres'
               />
+            </div>
+            <div className='row'>
+              <div
+                className='col-sm bounce'
+                style={{
+                  textAlign: 'center',
+                  marginTop: '10vh'
+                }}
+              >
+                {!this.state.isEmptyState ? <img width='40' height='40' alt='' src={DownArrow} /> : null}
+              </div>
             </div>
           </div>
           <div

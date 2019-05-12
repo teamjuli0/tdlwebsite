@@ -20,7 +20,7 @@ const beliefsCard = props => (
     <div
       className='row'
       style={{
-        marginTop: '10vh',
+        marginTop: '2vh',
         paddingTop: '2vh',
 
         display: 'flex',
@@ -42,7 +42,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -124,13 +127,15 @@ const beliefsCard = props => (
         </p>
       </div>
       <div className='col-sm-5'>
-        {' '}
         <img
           src={HermanoAxel}
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -152,7 +157,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -220,7 +228,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -242,7 +253,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -318,7 +332,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -340,7 +357,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -412,7 +432,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -434,7 +457,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -507,7 +533,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -529,7 +558,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />
@@ -641,7 +673,10 @@ const beliefsCard = props => (
           style={{
             width: '100%',
             border: '4px solid white',
-            borderRadius: '5px'
+            borderRadius: '5px',
+            boxShadow: '0 0 20px gray',
+            MozBoxShadow: '0 0 20px gray',
+            WebkitBoxShadow: '0 0 20px gray'
           }}
           alt=''
         />

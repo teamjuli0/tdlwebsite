@@ -33,7 +33,10 @@ const aboutCard = props => (
               backgroundColor: '#797f86',
               display: 'flex',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
+              boxShadow: '0 0 20px gray',
+              MozBoxShadow: '0 0 20px gray',
+              WebkitBoxShadow: '0 0 20px gray'
             }}
           >
             <p
