@@ -6,6 +6,7 @@ import { BeliefsCard, ValuesCard, LeadersCard } from '../components/aboutPageCar
 
 import { DownArrow } from '../images/logosAndIcons'
 
+//onclick if (beliefsCard) {setState: beliefs: false, emptystate: true}
 class AboutPage extends React.Component {
   state = {
     isEmptyState: true,
@@ -15,30 +16,51 @@ class AboutPage extends React.Component {
   }
 
   triggerBeliefs = () => {
-    this.setState({
-      isEmptyState: false,
-      isBeliefsState: true,
-      isValuesState: false,
-      isLeadersState: false
-    })
+    if (this.state.isBeliefsState) {
+      this.setState({
+        isEmptyState: true,
+        isBeliefsState: false
+      })
+    } else {
+      this.setState({
+        isEmptyState: false,
+        isBeliefsState: true,
+        isValuesState: false,
+        isLeadersState: false
+      })
+    }
   }
 
   triggerValues = () => {
-    this.setState({
-      isEmptyState: false,
-      isBeliefsState: false,
-      isValuesState: true,
-      isLeadersState: false
-    })
+    if (this.state.isValuesState) {
+      this.setState({
+        isEmptyState: true,
+        isValuesState: false
+      })
+    } else {
+      this.setState({
+        isEmptyState: false,
+        isBeliefsState: false,
+        isValuesState: true,
+        isLeadersState: false
+      })
+    }
   }
 
   triggerLeaders = () => {
-    this.setState({
-      isEmptyState: false,
-      isBeliefsState: false,
-      isValuesState: false,
-      isLeadersState: true
-    })
+    if (this.state.isLeadersState) {
+      this.setState({
+        isEmptyState: true,
+        isLeadersState: false
+      })
+    } else {
+      this.setState({
+        isEmptyState: false,
+        isBeliefsState: false,
+        isValuesState: false,
+        isLeadersState: true
+      })
+    }
   }
 
   render() {
