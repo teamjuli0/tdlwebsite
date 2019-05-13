@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Navbar } from '../components/bootstrap'
+import { Navbar } from '../../components/bootstrap'
 
 class ContactPage extends React.Component {
   state = {

@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Navbar } from '../components/bootstrap'
-import { AboutCard } from '../components/infoCards'
-import { BeliefsCard, ValuesCard, LeadersCard } from '../components/aboutPageCards'
+import { Navbar } from '../../components/bootstrap'
+import { AboutCard } from '../../components/infoCards'
+import { BeliefsCard, ValuesCard, LeadersCard } from '../../components/aboutPageCards'
 
-import { DownArrow } from '../images/logosAndIcons'
+import { DownArrow } from '../../images/logosAndIcons'
 
 //onclick if (beliefsCard) {setState: beliefs: false, emptystate: true}
 class AboutPage extends React.Component {

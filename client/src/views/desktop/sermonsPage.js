@@ -1,18 +1,18 @@
 import React from 'react'
 
-import { Firebase } from '../components/google'
-import { YoutubeMain, YoutubePlayer } from '../components/youtube'
-import { ActivityCard, PastServiceCard } from '../components/infoCards'
-import { Navbar, VerticalDivider } from '../components/bootstrap'
+import { Firebase } from '../../components/google'
+import { YoutubeMain, YoutubePlayer } from '../../components/youtube'
+import { ActivityCard, PastServiceCard } from '../../components/infoCards'
+import { Navbar, VerticalDivider } from '../../components/bootstrap'
 
-import { Bg1, Bg2, Bg3 } from '../images/backgrounds'
+import { Bg1, Bg2, Bg3 } from '../../images/backgrounds'
 import {
   LosCachorrosTDL,
   JesusBuscaIntimos,
   BajoRevelacion,
   NocheDeFuego,
   LlamamientoDeGedeon
-} from '../images/youtubeVideoThumbnails'
+} from '../../images/youtubeVideoThumbnails'
 import {
   AxelIcon,
   MikeIcon,
@@ -22,7 +22,7 @@ import {
   SilviaIcon,
   NeftaliIcon,
   TabernaculoIcon
-} from '../images/roundIcons'
+} from '../../images/roundIcons'
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
