@@ -93,6 +93,7 @@ class LocationPage extends React.Component {
             style={{
               backgroundColor: '#212a36',
               textAlign: 'center',
+              padding: 0,
               paddingBottom: '2vh'
             }}
           >
@@ -103,12 +104,7 @@ class LocationPage extends React.Component {
                 height: '40vh'
               }}
             >
-              <div
-                className='col-sm'
-                style={{
-                  padding: 0
-                }}
-              >
+              <div className='col-sm'>
                 <MapDark
                   style={{
                     width: '100vw',

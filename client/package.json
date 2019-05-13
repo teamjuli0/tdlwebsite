@@ -5,6 +5,7 @@
   "dependencies": {
     "firebase": "^5.10.1",
     "google-maps-react": "^2.0.2",
+    "jquery": "^3.4.1",
     "react": "^16.8.6",
     "react-background-slider": "^1.2.0",
     "react-collapsed": "^2.0.0",
