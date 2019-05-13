@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { Firebase } from '../components/google'
-import { ActivityCard, PastServiceCard } from '../components/infoCards'
-import { Navbar } from '../components/bootstrap'
-import { MapDark } from '../components/maps'
+import { Firebase } from '../../components/google'
+import { ActivityCard, PastServiceCard } from '../../components/infoCards'
+import { Navbar } from '../../components/bootstrap'
+import { MapDark } from '../../components/maps'
 
-import { Bg1, Bg2, Bg3 } from '../images/backgrounds'
+import { Bg1, Bg2, Bg3 } from '../../images/backgrounds'
 import {
   AxelIcon,
   MikeIcon,
@@ -15,7 +15,7 @@ import {
   SilviaIcon,
   NeftaliIcon,
   TabernaculoIcon
-} from '../images/roundIcons'
+} from '../../images/roundIcons'
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
@@ -101,7 +101,8 @@ class LocationPage extends React.Component {
             <div
               className='row'
               style={{
-                height: '40vh'
+                height: '33vh',
+                width: '100vw'
               }}
             >
               <div className='col-sm'>

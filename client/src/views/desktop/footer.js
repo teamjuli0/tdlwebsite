@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { YoutubeLogo } from '../images/logosAndIcons'
+import { YoutubeLogo } from '../../images/logosAndIcons'
 
 class Footer extends React.Component {
   render() {
