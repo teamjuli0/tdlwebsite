@@ -201,7 +201,7 @@ class Footer extends React.Component {
                 <p style={{ marginTop: '3vh', fontWeight: 900 }}>Mas Referencias</p>
                 <ul style={{ paddingTop: '1vh' }}>
                   <li style={{ marginTop: '3vh' }}>
-                    <a href='/contatanos'>Contactanos</a>
+                    <a href='/contactanos'>Contactanos</a>
                   </li>
                   <li style={{ marginTop: '3vh' }}>
                     <a href='/eventos'>Eventos</a>
