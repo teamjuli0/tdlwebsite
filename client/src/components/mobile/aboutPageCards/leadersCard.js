@@ -19,9 +19,11 @@ const leadersCard = () => (
     <div
       className='row'
       style={{
+        margin: 'auto',
         marginTop: '2vh',
         paddingTop: '5vh',
-        paddingBottom: '2vh'
+        paddingBottom: '2vh',
+        maxWidth: '768px'
       }}
     >
       <LeadersInfoCardMobile
