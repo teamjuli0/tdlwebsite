@@ -97,7 +97,7 @@ class LandingPage extends React.Component {
                   >
                     <div
                       style={{
-                        fontSize: '17px',
+                        fontSize: '15px',
                         fontWeight: 'bold',
                         letterSpacing: '1px',
                         paddingBottom: '10px'
