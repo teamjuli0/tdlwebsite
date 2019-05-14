@@ -20,6 +20,8 @@ class LocationPage extends React.Component {
     xtr: ''
   }
 
+  myMapContainer = React.createRef()
+
   componentDidMount() {
     dayRef.on('value', snapshot => {
       console.log(snapshot.val())
@@ -49,11 +51,11 @@ class LocationPage extends React.Component {
         return AdaSquare
       case 'Pastor Axel':
         return AxelSquare
-      case 'Pastor Julio':
+      case 'Pastor Julio' || 'Pastor Julio Vanegas' || 'Pastor Julio Cesar Vanegas':
         return JulioSquare
-      case 'Pastor Mike':
+      case 'Pastor Mike' || 'Pastor Mike Bayona' || 'Pastor Mike Bayona Lopez':
         return MikeSquare
-      case 'Pastora Yadi':
+      case 'Pastora Yady' || 'Pastora Yady Bayona':
         return YadySquare
       case 'Pastor Neftali':
       default:
@@ -77,16 +79,13 @@ class LocationPage extends React.Component {
           <Navbar
           //height = 7vh
           />
-          <div
-            className='container-fluid'
-            style={{
-              maxWidth: '1050px'
-            }}
-          >
+          <div className='container-fluid'>
             <div
               className='row'
               style={{
-                paddingBottom: '50px'
+                maxWidth: '1050px',
+                paddingBottom: '50px',
+                margin: 'auto'
               }}
             >
               <ActivityCard
@@ -130,85 +129,87 @@ class LocationPage extends React.Component {
                 Verse={sun.verse}
               />
             </div>
-            <div
-              className='row'
-              style={{
-                paddingTop: '25px',
-                paddingBottom: '50px',
-                maxWidth: '1000px',
-                height: '550px'
-              }}
-            >
-              <MapDark
-                style={{
-                  margin: 'auto',
-                  marginTop: '0',
-                  width: '95%',
-                  height: '500px',
-                  border: '4px solid #c3c5c8',
-                  borderRadius: '10px',
-                  webkitBoxShadow: '0 0 20px #5e656e',
-                  mozBoxShadow: '0 0 20px #5e656e',
-                  boxShadow: '0 0 20px #5e656e'
-                }}
-              />
+            <div className='row' style={{}}>
               <div
                 style={{
-                  paddingTop: '70px',
-                  marginLeft: '25px'
+                  margin: 'auto',
+                  maxWidth: '1050px',
+                  width: '95vw',
+                  paddingTop: '25px',
+                  paddingBottom: '50px'
                 }}
               >
-                <div className='col-sm'>
-                  <a
-                    href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
-                    role='button'
-                    class='btn btn-block'
-                    style={{
-                      backgroundColor: '#eeeeee',
-                      color: 'black',
-                      marginTop: '2.25vh'
-                    }}
-                  >
-                    Direciones
-                  </a>
+                <div
+                  style={{
+                    position: 'absolute',
+                    marginTop: '70px',
+                    paddingLeft: '0px',
+                    zIndex: '1'
+                  }}
+                >
+                  <div className='col-sm' style={{}}>
+                    <a
+                      href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
+                      role='button'
+                      class='btn btn-block'
+                      style={{
+                        backgroundColor: '#eeeeee',
+                        color: 'black',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Direciones
+                    </a>
+                  </div>
+                  <div className='col-sm'>
+                    <a
+                      href='/sermones'
+                      role='button'
+                      class='btn btn-block'
+                      style={{
+                        backgroundColor: '#eeeeee',
+                        color: 'black',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Sermones
+                    </a>
+                  </div>
+                  <div className='col-sm'>
+                    <a
+                      href='/nosotros'
+                      role='button'
+                      class='btn btn-success btn-block'
+                      style={{
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Sobre Nosotros
+                    </a>
+                  </div>
+                  <div className='col-sm'>
+                    <button
+                      type='button'
+                      class='btn btn-danger btn-block'
+                      style={{
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      1(800)555-5555
+                    </button>
+                  </div>
                 </div>
-                <div className='col-sm'>
-                  <a
-                    href='/sermones'
-                    role='button'
-                    class='btn btn-block'
-                    style={{
-                      backgroundColor: '#eeeeee',
-                      color: 'black',
-                      marginTop: '2.25vh'
-                    }}
-                  >
-                    Sermones
-                  </a>
-                </div>
-                <div className='col-sm'>
-                  <a
-                    href='/nosotros'
-                    role='button'
-                    class='btn btn-success btn-block'
-                    style={{
-                      marginTop: '2.25vh'
-                    }}
-                  >
-                    Sobre Nosotros
-                  </a>
-                </div>
-                <div className='col-sm'>
-                  <button
-                    type='button'
-                    class='btn btn-danger btn-block'
-                    style={{
-                      marginTop: '2.25vh'
-                    }}
-                  >
-                    1(800)555-5555
-                  </button>
-                </div>
+                <MapDark
+                  Style={{
+                    width: '100%',
+                    height: '500px',
+                    border: '4px solid #c3c5c8',
+                    borderRadius: '10px',
+                    webkitBoxShadow: '0 0 20px #5e656e',
+                    mozBoxShadow: '0 0 20px #5e656e',
+                    boxShadow: '0 0 20px #5e656e'
+                  }}
+                />
               </div>
             </div>
           </div>
