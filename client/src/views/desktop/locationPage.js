@@ -6,7 +6,7 @@ import { Navbar } from '../../components/bootstrap'
 import { MapDark } from '../../components/maps'
 
 import { Bg1, Bg2, Bg3 } from '../../images/backgrounds'
-import { AdaSquare, AxelSquare, JulioSquare, MikeSquare, YadySquare, TabernaculoIcon } from '../../images/roundIcons'
+import { AdaSquare, AxelSquare, JulioSquare, MikeSquare, YadySquare, TabernaculoSquare } from '../../images/roundIcons'
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
@@ -59,7 +59,7 @@ class LocationPage extends React.Component {
         return YadySquare
       case 'Pastor Neftali':
       default:
-        return TabernaculoIcon
+        return TabernaculoSquare
     }
   }
 

@@ -42,6 +42,7 @@ class youtubePlayer extends React.Component {
           width: '100%',
           position: 'absolute'
         }}
+        title='youtube video'
         width='560'
         height='315'
         src={'https://www.youtube.com/embed/' + xtr.videoId}
