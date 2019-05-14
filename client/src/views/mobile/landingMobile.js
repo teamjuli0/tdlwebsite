@@ -13,20 +13,22 @@ class LandingPage extends React.Component {
     return (
       <div>
         <Navbar />
-        <BackgroundSlider
-          images={[Julio, Eating, Mike, Axel, Beach]}
-          duration={7}
-          transition={1}
-          style={{
-            width: '100vw'
-          }}
-        />
+
         <div
           style={{
             textAlign: 'center',
             color: '#ecedee'
           }}
         >
+          <BackgroundSlider
+            images={[Julio, Eating, Mike, Axel, Beach]}
+            duration={7}
+            transition={1}
+            style={{
+              minHeight: '1000px',
+              width: '100vw'
+            }}
+          />
           <div className='container-fluid'>
             <div className='row'>
               <div className='col-sm-6'>
