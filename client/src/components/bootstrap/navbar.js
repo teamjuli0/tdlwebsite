@@ -14,7 +14,7 @@ const Navbar = props => (
       <img
         src={RoundCross}
         style={{
-          height: '6vh'
+          height: '55px'
         }}
         alt=''
       />
@@ -33,7 +33,7 @@ const Navbar = props => (
         src={MenuIcon}
         alt=''
         style={{
-          height: '3vh'
+          height: '25px'
         }}
       />
     </button>
