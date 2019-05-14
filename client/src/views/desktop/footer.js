@@ -62,7 +62,7 @@ class Footer extends React.Component {
                 style={{
                   color: '#4c4c4c'
                 }}
-                href='/direciones'
+                href='/visitanos'
               >
                 LOCACION
               </a>
@@ -187,13 +187,13 @@ class Footer extends React.Component {
 
                 <ul style={{ paddingTop: '1vh' }}>
                   <li style={{ marginTop: '3vh' }}>
-                    <a href='/nosotros'>Creencias</a>
+                    <a href='/creencias'>Creencias</a>
                   </li>
                   <li style={{ marginTop: '3vh' }}>
-                    <a href='/nosotros'>Valores</a>
+                    <a href='/valores'>Valores</a>
                   </li>
                   <li style={{ marginTop: '3vh' }}>
-                    <a href='/nosotros'>Lideres</a>
+                    <a href='/lideres'>Lideres</a>
                   </li>
                 </ul>
               </div>
@@ -204,10 +204,10 @@ class Footer extends React.Component {
                     <a href='/contactanos'>Contactanos</a>
                   </li>
                   <li style={{ marginTop: '3vh' }}>
-                    <a href='/eventos'>Eventos</a>
+                    <a href='/direciones'>Direciones</a>
                   </li>
                   <li style={{ marginTop: '3vh' }}>
-                    <a href='/consorcio'>Consorcio</a>
+                    <a href='/horario'>Horario</a>
                   </li>
                 </ul>
               </div>

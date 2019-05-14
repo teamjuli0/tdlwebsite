@@ -21,7 +21,7 @@ import {
   MariaIcon,
   SilviaIcon,
   NeftaliIcon,
-  TabernaculoIcon
+  TabernaculoSquare
 } from '../../images/roundIcons'
 
 const database = Firebase.database()
@@ -81,7 +81,7 @@ class Sermons extends React.Component {
       case 'Pastora Maria':
         return MariaIcon
       default:
-        return TabernaculoIcon
+        return TabernaculoSquare
     }
   }
 

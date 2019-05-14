@@ -71,7 +71,7 @@ const card = props => (
             color: '#7d7d7d'
           }}
         >
-          Alavansa:
+          Alabansa:
         </p>
         <p
           style={{

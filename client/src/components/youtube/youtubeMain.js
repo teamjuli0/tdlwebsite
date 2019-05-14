@@ -17,16 +17,17 @@ class Main extends React.Component {
             marginTop: '2vh'
           }}
         >
-          <div
-            className='col-sm'
-            style={{
-              overflow: 'hidden',
-              paddingBottom: '56.25%',
-              position: 'relative',
-              height: 0
-            }}
-          >
-            <YoutubePlayer />
+          <div className='col-sm'>
+            <div
+              style={{
+                overflow: 'hidden',
+                paddingBottom: '56.25%',
+                position: 'relative',
+                height: 0
+              }}
+            >
+              <YoutubePlayer />
+            </div>
           </div>
         </div>
         <div
