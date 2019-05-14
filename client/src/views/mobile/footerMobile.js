@@ -256,7 +256,7 @@ class FooterMobile extends React.Component {
           <div
             className='row'
             style={{
-              minHeight: '10vh',
+              minHeight: '100px',
               backgroundColor: '#2a2a2a',
               color: 'white',
               fontFamily: 'Montserrat, sans-serif',
