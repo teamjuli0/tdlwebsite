@@ -5,25 +5,32 @@ import { YoutubeLogo } from '../../images/logosAndIcons'
 class Footer extends React.Component {
   render() {
     return (
-      <div style={styles.mainDiv}>
-        <div className='container-fluid'>
+      <div>
+        <div
+          className='container-fluid'
+          style={{
+            backgroundColor: '#f2f2f2'
+          }}
+        >
           <div
             className='row'
             style={{
-              height: '7vh',
-              display: 'flex',
-              alignItems: 'center',
+              minHeight: '70px',
+              maxWidth: '1024px',
+              margin: 'auto',
               color: '#4c4c4c',
-              backgroundColor: '#f2f2f2',
               fontFamily: 'Montserrat, sans-serif',
               fontWeight: '800'
             }}
           >
             <div
-              className='col-sm'
+              className='col-sm-3'
               style={{
+                minHeight: '40px',
                 margin: 'auto',
-                textAlign: 'center'
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
               }}
             >
               <a
@@ -36,10 +43,13 @@ class Footer extends React.Component {
               </a>
             </div>
             <div
-              className='col-sm'
+              className='col-sm-3'
               style={{
+                minHeight: '40px',
                 margin: 'auto',
-                textAlign: 'center'
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
               }}
             >
               <a
@@ -52,10 +62,13 @@ class Footer extends React.Component {
               </a>
             </div>
             <div
-              className='col-sm'
+              className='col-sm-3'
               style={{
+                minHeight: '40px',
                 margin: 'auto',
-                textAlign: 'center'
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
               }}
             >
               <a
@@ -68,10 +81,13 @@ class Footer extends React.Component {
               </a>
             </div>
             <div
-              className='col-sm'
+              className='col-sm-3'
               style={{
+                minHeight: '40px',
                 margin: 'auto',
-                textAlign: 'center'
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
               }}
             >
               <a
@@ -87,157 +103,173 @@ class Footer extends React.Component {
           <div
             className='row'
             style={{
-              height: '46vh',
               color: '#4c4c4c',
               backgroundColor: '#e5e5e5',
-              backgroundSize: 'cover'
+              backgroundSize: 'cover',
+              paddingBottom: '50px'
             }}
           >
-            <div
-              className='row'
-              style={{
-                width: '60%',
-                height: '11vh',
-                margin: 'auto'
-              }}
-            >
+            <div className='col-sm'>
               <div
-                className='col-sm'
+                className='row'
                 style={{
-                  textAlign: 'center',
-                  paddingTop: '6vh'
+                  paddingTop: '40px',
+                  maxWidth: '500px',
+                  margin: 'auto'
                 }}
               >
-                <a
+                <div
                   style={{
-                    borderRadius: '5px',
-                    padding: '.5vh',
-                    paddingRight: '1.5vh',
-                    paddingLeft: '1.5vh',
-                    color: 'white',
-                    fontSize: 23,
-                    backgroundColor: '#363636',
-                    textDecoration: 'none'
+                    width: '50%',
+                    textAlign: 'center'
                   }}
-                  href='https://www.facebook.com/tvcristianopentecostes.pentecostes'
                 >
-                  facebook<span style={{ fontSize: 9 }}>©</span>
-                </a>
+                  <a
+                    style={{
+                      borderRadius: '5px',
+                      padding: '.5vh',
+                      paddingRight: '1.5vh',
+                      paddingLeft: '1.5vh',
+                      color: 'white',
+                      fontSize: 23,
+                      backgroundColor: '#363636',
+                      textDecoration: 'none'
+                    }}
+                    href='https://www.facebook.com/tvcristianopentecostes.pentecostes'
+                  >
+                    facebook<span style={{ fontSize: 9 }}>©</span>
+                  </a>
+                </div>
+                <div
+                  style={{
+                    width: '50%',
+                    textAlign: 'center'
+                  }}
+                >
+                  <a
+                    style={{
+                      borderRadius: '5px',
+                      padding: '.5vh',
+                      paddingRight: '1.5vh',
+                      paddingLeft: '1.5vh',
+                      color: 'white',
+                      fontSize: 23,
+                      backgroundColor: '#363636',
+                      textDecoration: 'none'
+                    }}
+                    href='https://www.youtube.com/channel/UCOQVMU-4ES1hnCs2Un--omg'
+                  >
+                    <span>
+                      <img
+                        src={YoutubeLogo}
+                        alt=''
+                        style={{
+                          height: 20,
+                          paddingRight: '1vh'
+                        }}
+                      />
+                    </span>
+                    YouTube
+                    <span
+                      style={{
+                        paddingLeft: '.25vh',
+                        fontSize: 9
+                      }}
+                    >
+                      ©
+                    </span>
+                  </a>
+                </div>
               </div>
               <div
-                className='col-sm'
+                className='row'
                 style={{
-                  textAlign: 'center',
-                  paddingTop: '6vh'
+                  width: '100%',
+                  maxWidth: '900px',
+                  margin: 'auto',
+                  minHeight: '275px',
+                  fontFamily: 'Montserrat, sans-serif',
+                  textAlign: 'center'
                 }}
               >
-                <a
-                  style={{
-                    borderRadius: '5px',
-                    padding: '.5vh',
-                    paddingRight: '1.5vh',
-                    paddingLeft: '1.5vh',
-                    color: 'white',
-                    fontSize: 23,
-                    backgroundColor: '#363636',
-                    textDecoration: 'none'
-                  }}
-                  href='https://www.youtube.com/channel/UCOQVMU-4ES1hnCs2Un--omg'
-                >
-                  <span>
-                    <img
-                      src={YoutubeLogo}
-                      alt=''
-                      style={{
-                        height: 20,
-                        paddingRight: '1vh'
-                      }}
-                    />
-                  </span>
-                  YouTube
-                  <span
+                <div className='col-sm' style={{}}>
+                  <p
                     style={{
-                      paddingLeft: '.25vh',
-                      fontSize: 9
+                      marginTop: '50px',
+                      fontWeight: 900
                     }}
                   >
-                    ©
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div
-              className='row'
-              style={{
-                width: '100%',
-                height: '35vh',
-                fontFamily: 'Montserrat, sans-serif'
-              }}
-            >
-              <div className='col-sm-2' />
-              <div className='col-sm'>
-                <p
-                  style={{
-                    marginTop: '3vh',
-                    fontWeight: 900
-                  }}
-                >
-                  Sobre Nosotros
-                </p>
+                    Sobre Nosotros
+                  </p>
 
-                <ul style={{ paddingTop: '1vh' }}>
-                  <li style={{ marginTop: '3vh' }}>
-                    <a href='/creencias'>Creencias</a>
-                  </li>
-                  <li style={{ marginTop: '3vh' }}>
-                    <a href='/valores'>Valores</a>
-                  </li>
-                  <li style={{ marginTop: '3vh' }}>
-                    <a href='/lideres'>Lideres</a>
-                  </li>
-                </ul>
+                  <ul>
+                    <li style={{ marginTop: '30px' }}>
+                      <a href='/creencias'>Creencias</a>
+                    </li>
+                    <li style={{ marginTop: '20px' }}>
+                      <a href='/valores'>Valores</a>
+                    </li>
+                    <li style={{ marginTop: '20px' }}>
+                      <a href='/lideres'>Lideres</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='col-sm'>
+                  <p
+                    style={{
+                      paddingTop: '50px',
+                      fontWeight: 900
+                    }}
+                  >
+                    Mas Referencias
+                  </p>
+                  <ul>
+                    <li style={{ marginTop: '30px' }}>
+                      <a href='/contactanos'>Contactanos</a>
+                    </li>
+                    <li style={{ marginTop: '20px' }}>
+                      <a href='/direciones'>Direciones</a>
+                    </li>
+                    <li style={{ marginTop: '20px' }}>
+                      <a href='/horario'>Horario</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='col-sm'>
+                  <p
+                    style={{
+                      marginTop: '50px',
+                      fontWeight: 900
+                    }}
+                  >
+                    Versos De Vida
+                  </p>
+                  <ul>
+                    <li style={{ marginTop: '30px' }}>Jeremiah 29:11</li>
+                    <li style={{ marginTop: '20px' }}>Proverbios 17:17</li>
+                    <li style={{ marginTop: '20px' }}>Roman 8:31</li>
+                  </ul>
+                </div>
               </div>
-              <div className='col-sm'>
-                <p style={{ marginTop: '3vh', fontWeight: 900 }}>Mas Referencias</p>
-                <ul style={{ paddingTop: '1vh' }}>
-                  <li style={{ marginTop: '3vh' }}>
-                    <a href='/contactanos'>Contactanos</a>
-                  </li>
-                  <li style={{ marginTop: '3vh' }}>
-                    <a href='/direciones'>Direciones</a>
-                  </li>
-                  <li style={{ marginTop: '3vh' }}>
-                    <a href='/horario'>Horario</a>
-                  </li>
-                </ul>
-              </div>
-              <div className='col-sm'>
-                <p style={{ marginTop: '3vh', fontWeight: 900 }}>Versos De Vida</p>
-                <ul style={{ paddingTop: '1vh' }}>
-                  <li style={{ marginTop: '3vh' }}>Jeremiah 29:11</li>
-                  <li style={{ marginTop: '3vh' }}>Proverbios 17:17</li>
-                  <li style={{ marginTop: '3vh' }}>Roman 8:31</li>
-                </ul>
-              </div>
-              <div className='col-sm-2' />
             </div>
           </div>
           <div
             className='row'
             style={{
-              height: '10vh',
+              minHeight: '100px',
               backgroundColor: '#2a2a2a',
               color: 'white',
               fontFamily: 'Montserrat, sans-serif',
-              fontSize: '15px'
+              fontSize: '15px',
+              textAlign: 'center'
             }}
           >
             <div className='col-sm'>
-              <p style={{ color: '#b2b2b2', height: '5vh', paddingTop: '2.5vh' }}>
+              <p style={{ color: '#b2b2b2', minHeight: '5vh', paddingTop: '2.5vh' }}>
                 4810 S Vermont Ave, Los Angeles, CA, 90037 | (800) 555-5555
               </p>
-              <p style={{ color: '#666666', height: '5vh', fontSize: '13px' }}>
-                © 2019 Tabernaculo De Liberacion. All Rights Reserved | Privacy Policy
+              <p style={{ color: '#666666', minHeight: '5vh', fontSize: '13px' }}>
+                © 2019 Tabernaculo De Liberacion. All Rights Reserved
               </p>
             </div>
           </div>
@@ -248,14 +280,6 @@ class Footer extends React.Component {
 }
 
 export default Footer
-
-const styles = {
-  mainDiv: {
-    textAlign: 'center',
-    backgroundColor: 'white',
-    display: 'block'
-  }
-}
 
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Roboto', sans-serif;

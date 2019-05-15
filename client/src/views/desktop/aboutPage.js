@@ -120,7 +120,8 @@ class AboutPage extends React.Component {
               className='row'
               style={{
                 margin: 'auto',
-                marginTop: '5vh'
+                marginTop: '5vh',
+                maxWidth: '1024px'
               }}
             >
               <AboutCard

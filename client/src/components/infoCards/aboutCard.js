@@ -5,7 +5,10 @@ const aboutCard = props => (
     <div
       className='col-sm-4'
       style={{
-        margin: 'auto'
+        margin: 'auto',
+        marginBottom: '50px',
+        paddingLeft: '5px',
+        paddingRight: '5px'
       }}
     >
       <div
