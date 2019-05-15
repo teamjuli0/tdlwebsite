@@ -80,7 +80,7 @@ class ContactPage extends React.Component {
                   style={{
                     fontSize: '40px',
                     margin: 'auto',
-                    marginTop: '5vw',
+                    marginTop: '5vh',
                     overflowWrap: 'break-word',
                     fontWeight: 900
                   }}

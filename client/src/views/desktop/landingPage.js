@@ -58,7 +58,7 @@ class LandingPage extends React.Component {
                   marginTop: '7vh',
                   fontFamily: 'Montserrat, sans-serif',
                   width: '82vh',
-                  paddingRight: '10vh',
+                  paddingRight: '15vh',
                   textAlign: 'right'
                 }}
               >
@@ -99,12 +99,18 @@ class LandingPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className='container-fluid'>
+        <div
+          className='container-fluid'
+          style={{
+            backgroundColor: 'white'
+          }}
+        >
           <div
             className='row'
             style={{
-              backgroundColor: 'white',
-              height: '37vh',
+              margin: 'auto',
+              maxWidth: '1024px',
+              minHeight: '37vh',
               padding: '2.5vh',
               paddingLeft: '5vh'
             }}

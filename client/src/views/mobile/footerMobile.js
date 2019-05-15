@@ -269,7 +269,7 @@ class FooterMobile extends React.Component {
                 4810 S Vermont Ave, Los Angeles, CA, 90037 | (800) 555-5555
               </p>
               <p style={{ color: '#666666', minHeight: '5vh', fontSize: '13px' }}>
-                © 2019 Tabernaculo De Liberacion. All Rights Reserved | Privacy Policy
+                © 2019 Tabernaculo De Liberacion. All Rights Reserved
               </p>
             </div>
           </div>
