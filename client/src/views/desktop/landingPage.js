@@ -44,7 +44,7 @@ class LandingPage extends React.Component {
                     margin: 5,
                     marginTop: 0
                   }}
-                  href='/sermones'
+                  href='/visitanos'
                   className='btn btn-light'
                 >
                   Horarios
