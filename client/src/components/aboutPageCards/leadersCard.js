@@ -31,15 +31,15 @@ const leadersCard = () => (
         LeaderDescription='Descripcion Corta Va Aqui. Puede incluir lo que guste. Por favor un maximo de cuatro frases'
       />
       <LeadersInfoCard
-        LeaderImg={MikeSquare}
-        LeaderTitle='PASTOR'
-        LeaderName='Mike Bayona'
-        LeaderDescription='Descripcion Corta Va Aqui. Puede incluir lo que guste. Por favor un maximo de cuatro frases'
-      />
-      <LeadersInfoCard
         LeaderImg={AxelSquare}
         LeaderTitle='PASTOR AUXILIAR'
         LeaderName='Axel Lopez'
+        LeaderDescription='Descripcion Corta Va Aqui. Puede incluir lo que guste. Por favor un maximo de cuatro frases'
+      />
+      <LeadersInfoCard
+        LeaderImg={MikeSquare}
+        LeaderTitle='HERMANO'
+        LeaderName='Mike Bayona'
         LeaderDescription='Descripcion Corta Va Aqui. Puede incluir lo que guste. Por favor un maximo de cuatro frases'
       />
     </div>
@@ -61,7 +61,7 @@ const leadersCard = () => (
       />
       <LeadersInfoCard
         LeaderImg={YadySquare}
-        LeaderTitle='PASTORA'
+        LeaderTitle='HERMANA'
         LeaderName='Yady Bayona'
         LeaderDescription='Descripcion Corta Va Aqui. Puede incluir lo que guste. Por favor un maximo de cuatro frases'
       />

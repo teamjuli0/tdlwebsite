@@ -7,11 +7,12 @@ import { Navbar, VerticalDivider } from '../../components/bootstrap'
 
 import { Bg1, Bg2, Bg3 } from '../../images/backgrounds'
 import {
-  LosCachorrosTDL,
-  JesusBuscaIntimos,
+  FirmesEnMedioDeLaMaldad,
+  ElPetalo,
   BajoRevelacion,
   NocheDeFuego,
-  LlamamientoDeGedeon
+  LlamamientoDeGedeon,
+  UnSoloCuerpo
 } from '../../images/youtubeVideoThumbnails'
 import {
   AxelIcon,
@@ -181,9 +182,9 @@ class Sermons extends React.Component {
           className='container-fluid'
         >
           <div className='row'>
-            <PastServiceCard YtId='TEVYqjwd-YA' Image={LosCachorrosTDL} />
-            <PastServiceCard YtId='YqiRrtBlI_A' Image={JesusBuscaIntimos} />
-            <PastServiceCard YtId='CAn8sei0wxM' Image={NocheDeFuego} />
+            <PastServiceCard YtId='rJX0l2DCz5A' Image={FirmesEnMedioDeLaMaldad} />
+            <PastServiceCard YtId='Jx9spiHZXMY' Image={ElPetalo} />
+            <PastServiceCard YtId='FrYma3CccDw' Image={UnSoloCuerpo} />
             <PastServiceCard YtId='zRSOnwkee7Y' Image={LlamamientoDeGedeon} />
           </div>
         </div>
