@@ -6,7 +6,8 @@ const LeadersInfoCard = props => (
   <div className='col-sm-4'>
     <div
       style={{
-        margin: 'auto'
+        margin: 'auto',
+        minHeight: '475px'
       }}
     >
       <div
@@ -70,6 +71,16 @@ const LeadersInfoCard = props => (
             }}
           >
             {props.LeaderDescription}
+          </p>
+          <p
+            style={{
+              textAlign: 'left',
+              fontSize: '13px',
+              color: 'bfbfbf',
+              paddingTop: '10px'
+            }}
+          >
+            {props.Verso}
           </p>
         </div>
       </div>

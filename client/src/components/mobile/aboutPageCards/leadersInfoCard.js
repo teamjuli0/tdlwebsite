@@ -84,7 +84,7 @@ const LeadersInfoCard = props => (
               textAlign: 'left',
               fontSize: 18,
               marginTop: '10px',
-              marginBottom: '10px',
+              marginBottom: '5px',
               lineHeight: '25px',
               fontWeight: 'bold',
               color: '#444444',
@@ -93,6 +93,17 @@ const LeadersInfoCard = props => (
             }}
           >
             {props.LeaderDescription}
+          </p>
+          <p
+            style={{
+              paddingLeft: '10px',
+              paddingTop: '0px',
+              marginBottom: '20px',
+              color: '#989898',
+              textAlign: 'left'
+            }}
+          >
+            {props.Verso}
           </p>
         </div>
       </div>
