@@ -1,9 +1,6 @@
 import React from 'react'
 
 import { YoutubePlayer } from '../youtube'
-import { PastServiceCard } from '../infoCards'
-
-import { PastorJulio } from '../../images/misc'
 
 class Main extends React.Component {
   render() {
@@ -37,45 +34,6 @@ class Main extends React.Component {
             paddingBottom: '4vh'
           }}
         >
-          {/* <div id='carouselExampleIndicators' className='col-sm carousel slide carousel-fade' data-ride='carousel'>
-            <ol className='carousel-indicators'>
-              <li data-target='#carouselExampleIndicators' data-slide-to='0' className='active' />
-              <li data-target='#carouselExampleIndicators' data-slide-to='1' />
-              <li data-target='#carouselExampleIndicators' data-slide-to='2' />
-            </ol>
-            <div className='carousel-inner'>
-              <div className='carousel-item active'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-              <div className='carousel-item'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-              <div className='carousel-item'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-            </div>
-          </div> */}
           <div
             className='col-sm'
             style={{

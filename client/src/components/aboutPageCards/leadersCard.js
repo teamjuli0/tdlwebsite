@@ -1,18 +1,7 @@
 import React from 'react'
 import { LeadersInfoCard } from '../aboutPageCards'
 
-import {
-  AxelIcon,
-  JulioIcon,
-  MikeIcon,
-  YadiIcon,
-  AdaIcon,
-  AxelSquare,
-  JulioSquare,
-  MikeSquare,
-  AdaSquare,
-  YadySquare
-} from '../../images/roundIcons'
+import { AxelSquare, JulioSquare, MikeSquare, AdaSquare, YadySquare } from '../../images/roundIcons'
 
 const leadersCard = () => (
   <>

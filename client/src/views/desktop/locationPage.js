@@ -1,11 +1,10 @@
 import React from 'react'
 
 import { Firebase } from '../../components/google'
-import { ActivityCard, PastServiceCard } from '../../components/infoCards'
+import { ActivityCard } from '../../components/infoCards'
 import { Navbar } from '../../components/bootstrap'
 import { MapDark } from '../../components/maps'
 
-import { Bg1, Bg2, Bg3 } from '../../images/backgrounds'
 import { AdaSquare, AxelSquare, JulioSquare, MikeSquare, YadySquare, TabernaculoSquare } from '../../images/roundIcons'
 
 const database = Firebase.database()

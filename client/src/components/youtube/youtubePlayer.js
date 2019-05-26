@@ -1,5 +1,4 @@
 import React from 'react'
-import YouTube from 'react-youtube'
 
 import { Firebase } from '../google'
 
@@ -24,14 +23,6 @@ class youtubePlayer extends React.Component {
   render() {
     const day = this.state
     const xtr = day.xtr
-
-    const opts = {
-      height: 630,
-      width: 840,
-      playerVars: {
-        autoplay: 0
-      }
-    }
 
     return (
       <iframe

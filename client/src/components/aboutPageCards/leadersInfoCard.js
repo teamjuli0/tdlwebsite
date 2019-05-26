@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { AxelIcon, JulioIcon, MikeIcon } from '../../images/roundIcons'
-
 const LeadersInfoCard = props => (
   <div className='col-sm-4'>
     <div

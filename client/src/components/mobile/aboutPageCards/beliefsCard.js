@@ -15,7 +15,7 @@ import {
   WorshipGroup
 } from '../../../images/backgrounds'
 
-const beliefsCard = props => (
+const beliefsCard = () => (
   <>
     <div
       className='row'

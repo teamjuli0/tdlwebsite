@@ -3,7 +3,7 @@ import MediaQuery from 'react-responsive'
 
 import { Navbar } from '../../components/bootstrap'
 import { AboutCard } from '../../components/infoCards'
-import { BeliefsCardMobile, ValuesCardMobile, LeadersCardMobile } from '../../components/mobile/aboutPageCards'
+import { BeliefsCard, ValuesCard, LeadersCard } from '../../components/aboutPageCards'
 
 import { DownArrow } from '../../images/logosAndIcons'
 
@@ -13,7 +13,21 @@ class AboutPage extends React.Component {
     isEmptyState: true,
     isBeliefsState: false,
     isValuesState: false,
-    isLeadersState: false
+    isLeadersState: false,
+    currentWidth: '',
+    currentHeight: ''
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resize.bind(this))
+    this.resize()
+  }
+
+  resize = () => {
+    this.setState({
+      currentWidth: window.innerWidth,
+      currentHeight: window.innerHeight
+    })
   }
 
   triggerBeliefs = () => {
@@ -243,9 +257,9 @@ class AboutPage extends React.Component {
               backgroundImage: 'linear-gradient(to bottom, #e5e5e5, white)'
             }}
           >
-            {(this.state.isBeliefsState && <BeliefsCardMobile />) ||
-              (this.state.isLeadersState && <LeadersCardMobile />) ||
-              (this.state.isValuesState && <ValuesCardMobile />)}
+            {this.state.isBeliefsState ? <BeliefsCard /> : null}
+            {this.state.isLeadersState ? <LeadersCard /> : null}
+            {this.state.isValuesState ? <ValuesCard /> : null}
           </div>
         </div>
       </>

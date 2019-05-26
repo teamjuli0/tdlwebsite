@@ -1,34 +1,35 @@
 import React from 'react'
-import MediaQuery from 'react-responsive'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import {
-  Footer,
-  AboutPage,
-  ContactPage,
-  LandingPage,
-  SermonsPage,
-  LocationPage,
-  PageNotFound,
-  ConsorcioPage
-} from './views/desktop'
+import { ContactPage, SermonsPage } from './views/desktop'
 
-import {
-  LandingMobile,
-  FooterMobile,
-  PageNotFoundMobile,
-  SermonsMobile,
-  LocationMobile,
-  AboutMobile
-} from './views/mobile'
+import { LandingMobile, FooterMobile, PageNotFoundMobile, LocationMobile, AboutMobile } from './views/mobile'
 
 import './App.css'
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      currentHeight: '',
+      currentWidth: ''
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resize.bind(this))
+    this.resize()
+  }
+
+  resize = () => {
+    this.setState({ currentWidth: window.innerWidth, currentHeight: window.innerHeight })
+  }
+
   render() {
     return (
       <>
-        <MediaQuery minDeviceWidth={1225}>
+        {/* <MediaQuery minDeviceWidth={1225}>
           <Router>
             <Switch>
               <Route exact path='/' component={LandingPage} />
@@ -46,26 +47,26 @@ class App extends React.Component {
 
             <Footer />
           </Router>
-        </MediaQuery>
-        <MediaQuery maxDeviceWidth={1224}>
-          <Router>
-            <Switch>
-              <Route exact path='/' component={LandingMobile} />
-              <Route exact path='/lideres' component={AboutMobile} />
-              <Route exact path='/valores' component={AboutMobile} />
-              <Route exact path='/nosotros' component={AboutMobile} />
-              <Route exact path='/sermones' component={SermonsPage} />
-              <Route exact path='/creencias' component={AboutMobile} />
-              <Route exact path='/horario' component={LocationMobile} />
-              <Route exact path='/contactanos' component={ContactPage} />
-              <Route exact path='/visitanos' component={LocationMobile} />
-              <Route exact path='/direciones' component={LocationMobile} />
-              <Route component={PageNotFoundMobile} />
-            </Switch>
+        </MediaQuery> */}
+        {/* <MediaQuery maxDeviceWidth={1224}> */}
+        <Router>
+          <Switch>
+            <Route exact path='/' component={LandingMobile} />
+            <Route exact path='/lideres' component={AboutMobile} />
+            <Route exact path='/valores' component={AboutMobile} />
+            <Route exact path='/nosotros' component={AboutMobile} />
+            <Route exact path='/sermones' component={SermonsPage} />
+            <Route exact path='/creencias' component={AboutMobile} />
+            <Route exact path='/horario' component={LocationMobile} />
+            <Route exact path='/contactanos' component={ContactPage} />
+            <Route exact path='/visitanos' component={LocationMobile} />
+            <Route exact path='/direciones' component={LocationMobile} />
+            <Route component={PageNotFoundMobile} />
+          </Switch>
 
-            <FooterMobile />
-          </Router>
-        </MediaQuery>
+          <FooterMobile />
+        </Router>
+        {/* </MediaQuery> */}
       </>
     )
   }

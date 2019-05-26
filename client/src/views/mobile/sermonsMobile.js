@@ -1,15 +1,13 @@
 import React from 'react'
 
 import { Firebase } from '../../components/google'
-import { YoutubeMain, YoutubePlayer } from '../../components/youtube'
-import { ActivityCard, PastServiceCard } from '../../components/infoCards'
-import { Navbar, VerticalDivider } from '../../components/bootstrap'
+import { YoutubePlayer } from '../../components/youtube'
+import { PastServiceCard } from '../../components/infoCards'
+import { Navbar } from '../../components/bootstrap'
 
-import { Bg1, Bg2, Bg3 } from '../../images/backgrounds'
 import {
   LosCachorrosTDL,
   JesusBuscaIntimos,
-  BajoRevelacion,
   NocheDeFuego,
   LlamamientoDeGedeon
 } from '../../images/youtubeVideoThumbnails'
@@ -87,9 +85,6 @@ class SermonsMobile extends React.Component {
 
   render() {
     const firebaseDb = this.state
-    const wed = firebaseDb.wed
-    const fri = firebaseDb.fri
-    const sun = firebaseDb.sun
     const xtr = firebaseDb.xtr
 
     return (
