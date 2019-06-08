@@ -123,11 +123,9 @@ class LandingPage extends React.Component {
                         margin: 'auto',
                         width: '120px',
                         height: '35px',
-                        background: 'white',
+                        background: '#eaeaea',
                         borderRadius: '18px',
-                        boxShadow: '0 0 5px #7f7f7f ',
-                        MozBoxShadow: '0 0 5px #7f7f7f',
-                        WebkitBoxShadow: '0 0 5px #7f7f7f'
+                        color: 'black'
                       }}
                       href='/sermones'
                     >
@@ -142,11 +140,9 @@ class LandingPage extends React.Component {
                         margin: 'auto',
                         width: '120px',
                         height: '35px',
-                        background: 'white',
+                        background: '#eaeaea',
                         borderRadius: '18px',
-                        boxShadow: '0 0 5px #7f7f7f ',
-                        MozBoxShadow: '0 0 5px #7f7f7f',
-                        WebkitBoxShadow: '0 0 5px #7f7f7f'
+                        color: 'black'
                       }}
                       href='/visitanos'
                     >

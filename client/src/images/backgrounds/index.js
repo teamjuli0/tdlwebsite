@@ -5,6 +5,8 @@ export { default as BgImg } from './locationBgImg.png'
 export { default as Interlaced } from './interlaced.png'
 export { default as GrayBg } from './grayBg.png'
 export { default as Triangles } from './triangles.png'
+export { default as BlackBg } from './blackBg.png'
+export { default as Wheat } from './wheat.png'
 
 export { default as ChurchBenches } from './churchBenchesBgImg.png'
 export { default as ChurchBenches2 } from './churchBenchesBgImg2.png'

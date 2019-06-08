@@ -13,6 +13,7 @@ class MapDark extends React.Component {
     let map = new google.maps.Map(this.myMapContainer.current, {
       center: { lat: 33.9991905, lng: -118.291228 },
       scrollwheel: false,
+      disableDefaultUI: true,
       zoom: 15,
       styles: [
         { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },

@@ -2,7 +2,6 @@ import React from 'react'
 import MediaQuery from 'react-responsive'
 
 import { Firebase } from '../../components/google'
-import { ActivityCard } from '../../components/infoCards'
 import { ActivityCardMobile } from '../../components/mobile/infoCards'
 import { Navbar } from '../../components/bootstrap'
 import { MapDark } from '../../components/maps'
@@ -81,16 +80,16 @@ class LocationPage extends React.Component {
           //height = 7vh
           />
           <div className='container-fluid'>
-            <MediaQuery minDeviceWidth={813}>
+            <MediaQuery minDeviceWidth={768}>
               <div
                 className='row'
                 style={{
-                  maxWidth: '1050px',
-                  paddingBottom: '50px',
+                  maxWidth: '900px',
+                  paddingTop: '20px',
                   margin: 'auto'
                 }}
               >
-                <ActivityCard
+                <ActivityCardMobile
                   Icon={this.renderSwitch(wed.preacher)}
                   Weekday={wed.day}
                   Time={wed.time}
@@ -98,15 +97,7 @@ class LocationPage extends React.Component {
                   WorshipGroup={wed.worshipGroup}
                   Verse={wed.verse}
                 />
-                <div
-                  style={{
-                    height: '450px',
-                    marginTop: '25px',
-                    border: '1px solid #4b525c',
-                    borderRadius: '75%'
-                  }}
-                />
-                <ActivityCard
+                <ActivityCardMobile
                   Icon={this.renderSwitch(fri.preacher)}
                   Weekday={fri.day}
                   Time={fri.time}
@@ -114,15 +105,7 @@ class LocationPage extends React.Component {
                   WorshipGroup={fri.worshipGroup}
                   Verse={fri.verse}
                 />
-                <div
-                  style={{
-                    height: '450px',
-                    marginTop: '25px',
-                    border: '1px solid #4b525c',
-                    borderRadius: '75%'
-                  }}
-                />
-                <ActivityCard
+                <ActivityCardMobile
                   Icon={this.renderSwitch(sun.preacher)}
                   Weekday={sun.day}
                   Time={sun.time}
@@ -136,7 +119,7 @@ class LocationPage extends React.Component {
               <div
                 style={{
                   margin: 'auto',
-                  maxWidth: '1050px',
+                  maxWidth: '900px',
                   width: '95vw',
                   paddingTop: '25px',
                   paddingBottom: '50px'
@@ -145,100 +128,95 @@ class LocationPage extends React.Component {
                 <div
                   style={{
                     position: 'absolute',
-                    margin: 'auto',
-                    marginTop: '70px',
+                    marginTop: '20px',
                     paddingLeft: '0px',
-                    zIndex: '1',
-                    textAlign: 'center'
+                    zIndex: '1'
                   }}
                 >
-                  <div
-                    className='col-sm'
-                    style={{
-                      width: '150px'
-                    }}
-                  >
-                    <div class='btn-group' role='group'>
-                      <button
-                        id='btnGroupDrop1'
-                        type='button'
-                        className='btn btn-secondary dropdown-toggle'
-                        data-toggle='dropdown'
-                        aria-haspopup='true'
-                        aria-expanded='false'
-                        style={{
-                          backgroundColor: '#eeeeee',
-                          color: 'black',
-                          marginTop: '2.25vh'
-                        }}
-                      >
-                        Direciones
-                      </button>
-                      <div
-                        className='dropdown-menu'
-                        aria-labelledby='btnGroupDrop1'
-                        style={{
-                          backgroundColor: '#eeeeee',
-                          color: 'black'
-                        }}
-                      >
-                        <a
-                          href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
-                          role='button'
-                          className='dropdown-item'
-                          style={{
-                            paddingBottom: '10px'
-                          }}
-                        >
-                          Direciones
-                        </a>
-                        <a
-                          href='/sermones'
-                          role='button'
-                          className='dropdown-item'
-                          style={{
-                            paddingBottom: '10px'
-                          }}
-                        >
-                          Sermones
-                        </a>
-                        <a
-                          href='/nosotros'
-                          role='button'
-                          className='dropdown-item'
-                          style={{
-                            paddingBottom: '10px'
-                          }}
-                        >
-                          Sobre Nosotros
-                        </a>
-                        <button
-                          type='button'
-                          className='dropdown-item'
-                          style={{
-                            paddingBottom: '10px'
-                          }}
-                        >
-                          1(800)555-5555
-                        </button>
-                      </div>
-                    </div>
+                  <div className='col-sm'>
+                    <a
+                      href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
+                      role='button'
+                      class='btn btn-block'
+                      style={{
+                        border: '2px solid #8e8e8e',
+                        backgroundColor: '#2e333a',
+                        color: '#eeeeee',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Direciones
+                    </a>
+                  </div>
+                  <div className='col-sm'>
+                    <a
+                      href='/sermones'
+                      role='button'
+                      class='btn btn-block'
+                      style={{
+                        border: '2px solid #8e8e8e',
+                        backgroundColor: '#2e333a',
+                        color: '#eeeeee',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Sermones
+                    </a>
+                  </div>
+                  <div className='col-sm'>
+                    <a
+                      href='/nosotros'
+                      role='button'
+                      class='btn btn-block'
+                      style={{
+                        border: '2px solid #c4d3e2',
+                        backgroundColor: '#3c6ea0',
+                        color: '#eeeeee',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      Sobre Nosotros
+                    </a>
+                  </div>
+                  <div className='col-sm'>
+                    <button
+                      type='button'
+                      class='btn btn-danger btn-block'
+                      style={{
+                        border: '2px solid #dfa4a4',
+                        backgroundColor: '#ab4141',
+                        color: '#eeeeee',
+                        marginTop: '2.25vh'
+                      }}
+                    >
+                      1(800)555-5555
+                    </button>
                   </div>
                 </div>
-                <MapDark
-                  Style={{
-                    width: '100%',
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
                     height: '500px',
-                    border: '4px solid #c3c5c8',
-                    borderRadius: '10px',
-                    webkitBoxShadow: '0 0 20px #5e656e',
-                    mozBoxShadow: '0 0 20px #5e656e',
-                    boxShadow: '0 0 20px #5e656e'
+                    overflow: 'hidden',
+                    border: '4px solid #465666',
+                    borderRadius: '5px',
+                    webkitBoxShadow: '0 0 5px black',
+                    mozBoxShadow: '0 0 5px black',
+                    boxShadow: '0 0 5px black'
                   }}
-                />
+                >
+                  <MapDark
+                    Style={{
+                      width: '100%',
+                      height: '550px'
+                    }}
+                  />
+                </div>
               </div>
             </div>
-            <MediaQuery maxDeviceWidth={812}>
+            <MediaQuery maxDeviceWidth={767}>
               <div
                 className='row'
                 style={{
