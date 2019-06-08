@@ -1,13 +1,12 @@
 import React from 'react'
 import MediaQuery from 'react-responsive'
 
-import { Navbar } from '../../components/bootstrap'
-import { AboutCard } from '../../components/infoCards'
-import { BeliefsCard, ValuesCard, LeadersCard } from '../../components/aboutPageCards'
+import { Navbar } from '../components/bootstrap'
+import { AboutCard } from '../components/infoCards'
+import { BeliefsCard, ValuesCard, LeadersCard } from '../components/aboutPageCards'
 
-import { DownArrow } from '../../images/logosAndIcons'
+import { DownArrow } from '../images/logosAndIcons'
 
-//onclick if (beliefsCard) {setState: beliefs: false, emptystate: true}
 class AboutPage extends React.Component {
   state = {
     isEmptyState: true,
@@ -93,7 +92,8 @@ class AboutPage extends React.Component {
             style={{
               minHeight: '55vh',
               backgroundColor: '#212a36',
-              fontFamily: 'Montserrat, sans-serif'
+              fontFamily: 'Montserrat, sans-serif',
+              maxWidth: '900px'
             }}
           >
             <MediaQuery minDeviceWidth={768}>
@@ -143,19 +143,19 @@ class AboutPage extends React.Component {
                   handleClick={this.triggerBeliefs}
                   CircleLetter='C'
                   Description='Cuales Son Nuestras Creencias'
-                  ButtonText='Creencias'
+                  ButtonText='Ver Creencias'
                 />
                 <AboutCard
                   handleClick={this.triggerValues}
                   CircleLetter='V'
                   Description='Descubre Nuestros Valores y Principios'
-                  ButtonText='Valores'
+                  ButtonText='Ver Valores'
                 />
                 <AboutCard
                   handleClick={this.triggerLeaders}
                   CircleLetter='L'
                   Description='Conoce Quienes Son Nuestros Lideres'
-                  ButtonText='Lideres'
+                  ButtonText='Ver Lideres'
                 />
               </div>
             </MediaQuery>
@@ -206,7 +206,7 @@ class AboutPage extends React.Component {
                       handleClick={this.triggerBeliefs}
                       CircleLetter='C'
                       Description='Cuales Son Nuestras Creencias'
-                      ButtonText='Creencias'
+                      ButtonText='Ver Creencias'
                     />
                   </div>
                   <div class='carousel-item'>
@@ -214,7 +214,7 @@ class AboutPage extends React.Component {
                       handleClick={this.triggerValues}
                       CircleLetter='V'
                       Description='Descubre Nuestros Valores y Principios'
-                      ButtonText='Valores'
+                      ButtonText='Ver Valores'
                     />
                   </div>
                   <div class='carousel-item'>
@@ -222,7 +222,7 @@ class AboutPage extends React.Component {
                       handleClick={this.triggerLeaders}
                       CircleLetter='L'
                       Description='Conoce Quienes Son Nuestros Lideres'
-                      ButtonText='Lideres'
+                      ButtonText='Ver Lideres'
                     />
                   </div>
                 </div>
@@ -257,9 +257,16 @@ class AboutPage extends React.Component {
               backgroundImage: 'linear-gradient(to bottom, #e5e5e5, white)'
             }}
           >
-            {this.state.isBeliefsState ? <BeliefsCard /> : null}
-            {this.state.isLeadersState ? <LeadersCard /> : null}
-            {this.state.isValuesState ? <ValuesCard /> : null}
+            <div
+              style={{
+                maxWidth: '900px',
+                margin: 'auto'
+              }}
+            >
+              {this.state.isBeliefsState ? <BeliefsCard /> : null}
+              {this.state.isLeadersState ? <LeadersCard /> : null}
+              {this.state.isValuesState ? <ValuesCard /> : null}
+            </div>
           </div>
         </div>
       </>
@@ -268,43 +275,3 @@ class AboutPage extends React.Component {
 }
 
 export default AboutPage
-
-/* <div id='carouselExampleIndicators' className='col-sm carousel slide carousel-fade' data-ride='carousel'>
-            <ol className='carousel-indicators'>
-              <li data-target='#carouselExampleIndicators' data-slide-to='0' className='active' />
-              <li data-target='#carouselExampleIndicators' data-slide-to='1' />
-              <li data-target='#carouselExampleIndicators' data-slide-to='2' />
-            </ol>
-            <div className='carousel-inner'>
-              <div className='carousel-item active'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-              <div className='carousel-item'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-              <div className='carousel-item'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-            </div>
-          </div> */

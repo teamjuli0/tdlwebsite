@@ -1,6 +1,0 @@
-export { default as LandingMobile } from './landingMobile'
-export { default as FooterMobile } from './footerMobile'
-export { default as PageNotFoundMobile } from './404Mobile'
-export { default as SermonsMobile } from './sermonsMobile'
-export { default as LocationMobile } from './locationMobile'
-export { default as AboutMobile } from './aboutMobile'

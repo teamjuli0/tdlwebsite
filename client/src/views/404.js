@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { Navbar } from '../../components/bootstrap'
+import { Navbar } from '../components/bootstrap'
 
-const PageNotFound = () => (
+const PageNotFoundMobile = () => (
   <>
     <div
       style={{
@@ -19,8 +19,8 @@ const PageNotFound = () => (
       >
         <p
           style={{
-            marginTop: '5vh',
-            paddingBottom: '2vh'
+            marginTop: '45px',
+            paddingBottom: '15px'
           }}
         >
           ERROR
@@ -35,19 +35,18 @@ const PageNotFound = () => (
         <div
           style={{
             margin: 'auto',
-            paddingBottom: '5vh',
-            width: '600px',
-            height: '150px',
+            width: '350px',
+            height: '125px',
             backgroundColor: '#131920',
             borderRadius: '100px'
           }}
         >
           <p
             style={{
-              marginTop: '50px',
-              padding: '50px',
+              marginTop: '25px',
+              padding: '25px',
               paddingBottom: '10px',
-              fontSize: 17,
+              fontSize: '17px',
               fontFamily: 'Montserrat, sans-serif',
               fontWeight: 'bolder',
               color: '#d2d4d6'
@@ -57,7 +56,7 @@ const PageNotFound = () => (
           </p>
           <a
             style={{
-              marginTop: '35px',
+              marginTop: '5px',
               width: '150px',
               backgroundColor: '#636972',
               border: '0px',
@@ -74,4 +73,4 @@ const PageNotFound = () => (
   </>
 )
 
-export default PageNotFound
+export default PageNotFoundMobile

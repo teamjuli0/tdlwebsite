@@ -63,32 +63,6 @@ const Navbar = props => (
       </ul>
     </div>
   </nav>
-
-  // <div
-  //   className='row'
-  //   style={{
-  //     color: 'white',
-  //     height: '7vh',
-  //     textAlign: 'center'
-  //   }}
-  // >
-  //   <div
-  //     className='col-sm-1'
-  //     style={{
-  //       padding: '0'
-  //     }}
-  //   >
-  //     <img
-  //       src={tabernaculoIcon}
-  //       alt=''
-  //       style={{
-  //         marginTop: '1vh',
-  //         marginLeft: '3vh',
-  //         height: '6vh'
-  //       }}
-  //     />
-  //   </div>
-  // </div>
 )
 
 export default Navbar

@@ -1,153 +1,226 @@
 import React from 'react'
 
+import { Interlaced } from '../../images/backgrounds'
+import { Guitar, Clock, Calender } from '../../images/logosAndIcons'
+
 const card = props => (
   <>
-    <div
-      style={{
-        height: '400px',
-        margin: 'auto',
-        width: '205px'
-      }}
-    >
+    <div className='col-sm'>
       <div
+        className='row'
         style={{
-          height: '225px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
+          margin: 'auto',
+          width: '210px',
+          marginBottom: '20px',
+          borderRadius: '15px',
+          backgroundColor: '#2b2c2d',
+          webkitBoxShadow: '0 0 10px black',
+          mozBoxShadow: '0 0 10px black',
+          boxShadow: '0 0 10px black',
+          overflow: 'hidden'
         }}
       >
-        <img
-          style={{
-            height: '205px',
-            width: '205px',
-            border: '4px solid #878b92',
-            borderRadius: '10px',
-            webkitBoxShadow: '0 0 20px #5e656e',
-            mozBoxShadow: '0 0 20px #5e656e',
-            boxShadow: '0 0 20px #5e656e'
-          }}
-          src={props.Icon}
-          alt=''
-        />
-      </div>
-      <div
-        style={{
-          height: '175px',
-          paddingLeft: '10px',
-          paddingRight: '10px'
-        }}
-      >
-        <p
+        <div
+          className='col-sm-12'
           style={{
             fontFamily: 'Fira Sans, sans-serif',
-            fontWeight: 'bolder',
-            fontSize: '30px',
-            color: '#d7d8da',
-            paddingTop: '10px'
+            color: 'white'
           }}
         >
-          {props.Weekday}
-        </p>
-        <p
-          style={{
-            paddingTop: '1vh',
-            color: '#7d7d7d'
-          }}
-        >
-          Horario:
-        </p>
-        <p
-          style={{
-            fontSize: 20,
-            color: '#c3c5c8'
-          }}
-        >
-          {props.Time}
-        </p>
-        <p
-          style={{
-            paddingTop: '1vh',
-            color: '#7d7d7d'
-          }}
-        >
-          Alabansa:
-        </p>
-        <p
-          style={{
-            fontSize: 20,
-            color: '#c3c5c8'
-          }}
-        >
-          {props.WorshipGroup}
-        </p>
-        <p
-          style={{
-            paddingTop: '1vh',
-            color: '#7d7d7d'
-          }}
-        >
-          Predicador:
-        </p>
-        <p
-          style={{
-            color: '#c3c5c8',
-            fontSize: 20
-          }}
-        >
-          {props.Preacher}
-        </p>{' '}
-        <p
-          style={{
-            paddingTop: '1vh',
-            color: '#7d7d7d'
-          }}
-        >
-          Tiempo Especial:
-        </p>
-        <p
-          style={{
-            color: '#c3c5c8',
-            fontSize: 20
-          }}
-        >
-          {props.Verse}
-        </p>
+          <div
+            className='row'
+            style={{
+              borderRadius: '2px',
+              backgroundImage: `url('${Interlaced}')`,
+              backgroundRepeat: 'repeat',
+              fontFamily: 'Lato, sans-serif',
+              height: '240px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center'
+            }}
+          >
+            <div
+              style={{
+                height: '165px',
+                width: '165px',
+                border: '3px solid #ab4141',
+                padding: '5px',
+                borderRadius: '50%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <img
+                style={{
+                  height: '150px',
+                  width: '150px',
+                  border: '3px solid #3c6ea0',
+                  padding: '5px',
+                  borderRadius: '50%'
+                }}
+                src={props.Icon}
+                alt=''
+              />
+            </div>
+            <div>
+              <p
+                style={{
+                  color: '#272728',
+                  fontSize: '25px',
+                  marginTop: '-25px',
+                  fontWeight: 'normal'
+                }}
+              >
+                {props.Preacher}
+              </p>
+              <p
+                style={{
+                  paddingTop: '3px',
+                  color: '#7d7d7d'
+                }}
+              >
+                Predicando
+              </p>
+            </div>
+          </div>
+          <div
+            className='row'
+            style={{
+              padding: '6px',
+              paddingTop: '15px',
+              paddingLeft: '8px',
+              display: 'flex',
+              justifyContent: 'left',
+              alignItems: 'center'
+            }}
+          >
+            <div
+              style={{
+                background: 'white',
+                borderRadius: '50%',
+                height: '30px',
+                width: '30px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <img
+                src={Clock}
+                alt=''
+                style={{
+                  height: '20px'
+                }}
+              />
+            </div>
+            <p
+              style={{
+                fontSize: 20,
+                color: '#eaebec',
+                paddingLeft: '10px'
+              }}
+            >
+              {props.Time}
+            </p>
+          </div>
+
+          <div
+            className='row'
+            style={{
+              padding: '6px',
+              paddingLeft: '8px',
+              display: 'flex',
+              justifyContent: 'left',
+              alignItems: 'center'
+            }}
+          >
+            <div
+              style={{
+                background: 'white',
+                borderRadius: '50%',
+                height: '30px',
+                width: '30px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <img
+                src={Calender}
+                alt=''
+                style={{
+                  height: '20px'
+                }}
+              />
+            </div>
+            <p
+              style={{
+                fontSize: 20,
+                color: '#eaebec',
+                paddingLeft: '10px'
+              }}
+            >
+              {props.Weekday}
+            </p>
+          </div>
+
+          <div
+            className='row'
+            style={{
+              padding: '6px',
+              paddingLeft: '8px',
+              display: 'flex',
+              justifyContent: 'left',
+              alignItems: 'center'
+            }}
+          >
+            <div
+              style={{
+                background: 'white',
+                borderRadius: '50%',
+                height: '30px',
+                width: '30px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <img
+                src={Guitar}
+                alt=''
+                style={{
+                  height: '20px'
+                }}
+              />
+            </div>
+            <p
+              style={{
+                fontSize: 20,
+                color: '#eaebec',
+                paddingLeft: '10px'
+              }}
+            >
+              {props.WorshipGroup}
+            </p>
+          </div>
+
+          <div
+            className='row'
+            style={{
+              height: '20px',
+              marginTop: '5px',
+              backgroundImage: 'linear-gradient(65deg, #3c6ea0, #ab4141 55%'
+            }}
+          >
+            <div className='col-sm' />
+          </div>
+        </div>
       </div>
     </div>
   </>
-  // <div
-  //   className='col-sm'
-  //   style={{
-  //     textAlign: 'center',
-  //     minHeight: '100%',
-  //     margin: '0, auto',
-  //     display: 'flex',
-  //     alignItems: 'center'
-  //   }}
-  // >
-  //   <div style={{ margin: 'auto', marginTop: '2vh', marginBottom: '2vh' }}>
-  //     <img src={props.Icon} alt={props.Alt} style={{ width: '12vw' }} />
-  //     <h4
-  //       style={{ marginBottom: '1vh', color: '#e6e6e6' }}
-  //       className='card-title'
-  //     >
-  //       {props.Weekday}
-  //     </h4>
-  //     <p className='card-text' style={{ color: '#b3b3b3' }}>
-  //       Predica {props.Preacher} @ {props.Time}
-  //     </p>
-  //     <p className='card-text' style={{ color: '#b3b3b3' }}>
-  //       Alabansa con {props.WorshipGroup}
-  //     </p>
-  //     <p className='card-text' style={{ color: '#b3b3b3' }}>
-  //       Tiempo Especial con {props.Verse}
-  //     </p>
-  //   </div>
-  //   <VerticalDivider color='#a6a6a6' />
-  // </div>
 )
-
-/* */
 
 export default card

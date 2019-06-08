@@ -1,90 +1,150 @@
 import React from 'react'
 
-const aboutCard = props => (
+import { Interlaced } from '../../images/backgrounds'
+
+const card = props => (
   <>
-    <div
-      className='col-sm-4'
-      style={{
-        margin: 'auto',
-        marginBottom: '50px',
-        paddingLeft: '5px',
-        paddingRight: '5px'
-      }}
-    >
+    <div className='col-sm'>
       <div
+        className='row'
         style={{
-          minHeight: '300px',
-          width: '200px',
-          backgroundColor: '#f5f5f5',
           margin: 'auto',
-          borderRadius: '5px',
-          textAlign: 'center'
+          width: '210px',
+          borderRadius: '15px',
+          backgroundColor: '#2b2c2d',
+          webkitBoxShadow: '0 0 10px black',
+          mozBoxShadow: '0 0 10px black',
+          boxShadow: '0 0 10px black',
+          overflow: 'hidden',
+          marginBottom: '30px'
         }}
       >
         <div
+          className='col-sm-12'
           style={{
-            height: '140px',
-            padding: '20px'
+            fontFamily: 'Fira Sans, sans-serif',
+            color: 'white'
           }}
         >
           <div
+            className='row'
             style={{
-              margin: 'auto',
-              height: '120px',
-              width: '120px',
-              borderRadius: '50%',
-              backgroundColor: '#797f86',
+              borderRadius: '2px',
+              backgroundImage: `url('${Interlaced}')`,
+              backgroundRepeat: 'repeat',
+              fontFamily: 'Lato, sans-serif',
+              height: '200px',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              boxShadow: '0 0 20px gray',
-              MozBoxShadow: '0 0 20px gray',
-              WebkitBoxShadow: '0 0 20px gray'
+              textAlign: 'center'
+            }}
+          >
+            <div
+              style={{
+                height: '165px',
+                width: '165px',
+                border: '3px solid #ab4141',
+                padding: '5px',
+                borderRadius: '50%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <p
+                style={{
+                  color: '#464646',
+                  fontSize: '80px',
+                  width: '150px',
+                  height: '150px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  fontWeight: 'bolder',
+                  fontFamily: 'Fredoka One, cursive',
+                  border: '3px solid #3c6ea0',
+                  borderRadius: '50%'
+                }}
+              >
+                {props.CircleLetter}
+              </p>
+            </div>
+          </div>
+          <div
+            className='row'
+            style={{
+              padding: '30px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              minHeight: '170px'
             }}
           >
             <p
               style={{
-                color: 'white',
-                fontSize: '80px',
-                fontWeight: 'bolder',
-                fontFamily: 'Roboto, sans-serif'
+                fontSize: 25,
+                color: '#eaebec'
               }}
             >
-              {props.CircleLetter}
+              {props.Description}
             </p>
           </div>
-        </div>
-        <div
-          style={{
-            minHeight: '160px',
-            padding: '10px',
-            marginTop: '10px'
-          }}
-        >
-          <p
+
+          <div
+            className='row'
             style={{
-              fontSize: '20px',
-              fontWeight: 'bold'
+              height: '28px',
+              backgroundImage: 'linear-gradient(65deg, #3c6ea0, #ab4141 55%'
             }}
           >
-            {props.Description}
-          </p>
-          <button
-            type='button'
-            className='btn btn-dark'
-            onClick={props.handleClick}
-            style={{
-              backgroundColor: '#4d545e',
-              fontWeight: 'bolder',
-              marginTop: '20px'
-            }}
-          >
-            {props.ButtonText}
-          </button>
+            <div className='col-sm'>
+              <div
+                onClick={props.handleClick}
+                style={{
+                  color: '#282828',
+                  margin: 'auto',
+                  backgroundColor: '#eaeaea',
+                  fontWeight: 'bolder',
+                  padding: '5px',
+                  minHeight: '30px',
+                  width: '120px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  borderRadius: '5px',
+                  border: '3px solid #989898',
+                  boxShadow: '0 0 5px black',
+                  mozBoxShadow: '0 0 5px black',
+                  webkitBoxShadow: '0 0 5px black',
+                  cursor: 'pointer',
+                  marginTop: '-13px'
+                }}
+              >
+                {props.ButtonText}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </>
 )
 
-export default aboutCard
+export default card
+
+//         <div
+//           style={{
+//             minHeight: '160px',
+//             padding: '10px',
+//             marginTop: '10px'
+//           }}
+//         >
+//
+//         </div>
+//       </div>
+//     </div>
+//   </>
+// )
+
+// export default aboutCard

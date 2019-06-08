@@ -1,26 +1,29 @@
 import React from 'react'
 
-import { YoutubeLogo } from '../../images/logosAndIcons'
+import { YoutubeLogo } from '../images/logosAndIcons'
 
-class Footer extends React.Component {
+class FooterMobile extends React.Component {
   render() {
     return (
       <div>
         <div
           className='container-fluid'
           style={{
-            backgroundColor: '#f2f2f2'
+            backgroundColor: '#f2f2f2',
+            boxShadow: '0 0 15px #797f86',
+            MozBoxShadow: '0 0 15px #797f86',
+            WebkitBoxShadow: '0 0 15px #797f86'
           }}
         >
           <div
             className='row'
             style={{
-              minHeight: '70px',
-              maxWidth: '1024px',
-              margin: 'auto',
               color: '#4c4c4c',
+              minHeight: '70px',
               fontFamily: 'Montserrat, sans-serif',
-              fontWeight: '800'
+              fontWeight: '800',
+              maxWidth: '1024px',
+              margin: 'auto'
             }}
           >
             <div
@@ -185,14 +188,14 @@ class Footer extends React.Component {
                 className='row'
                 style={{
                   width: '100%',
-                  maxWidth: '900px',
+                  maxWidth: '700px',
                   margin: 'auto',
                   minHeight: '275px',
                   fontFamily: 'Montserrat, sans-serif',
                   textAlign: 'center'
                 }}
               >
-                <div className='col-sm' style={{}}>
+                <div className='col-sm'>
                   <p
                     style={{
                       marginTop: '50px',
@@ -279,8 +282,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer
-
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Lato', sans-serif;
+export default FooterMobile

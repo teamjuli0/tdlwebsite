@@ -1,16 +1,11 @@
 import React from 'react'
 
-import { Firebase } from '../../components/google'
-import { YoutubePlayer } from '../../components/youtube'
-import { PastServiceCard } from '../../components/infoCards'
-import { Navbar } from '../../components/bootstrap'
+import { Firebase } from '../components/google'
+import { YoutubePlayer } from '../components/youtube'
+import { PastServiceCard } from '../components/infoCards'
+import { Navbar } from '../components/bootstrap'
 
-import {
-  LosCachorrosTDL,
-  JesusBuscaIntimos,
-  NocheDeFuego,
-  LlamamientoDeGedeon
-} from '../../images/youtubeVideoThumbnails'
+import { FirmesEnMedioDeLaMaldad, ElPetalo, LlamamientoDeGedeon, UnSoloCuerpo } from '../images/youtubeVideoThumbnails'
 import {
   AxelIcon,
   MikeIcon,
@@ -20,7 +15,7 @@ import {
   SilviaIcon,
   NeftaliIcon,
   TabernaculoSquare
-} from '../../images/roundIcons'
+} from '../images/roundIcons'
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
@@ -31,7 +26,7 @@ console.log(dayRef)
 
 console.log(dayRef)
 
-class SermonsMobile extends React.Component {
+class Sermons extends React.Component {
   state = {
     wed: '',
     fri: '',
@@ -176,9 +171,9 @@ class SermonsMobile extends React.Component {
           className='container-fluid'
         >
           <div className='row'>
-            <PastServiceCard YtId='TEVYqjwd-YA' Image={LosCachorrosTDL} />
-            <PastServiceCard YtId='YqiRrtBlI_A' Image={JesusBuscaIntimos} />
-            <PastServiceCard YtId='CAn8sei0wxM' Image={NocheDeFuego} />
+            <PastServiceCard YtId='rJX0l2DCz5A' Image={FirmesEnMedioDeLaMaldad} />
+            <PastServiceCard YtId='Jx9spiHZXMY' Image={ElPetalo} />
+            <PastServiceCard YtId='FrYma3CccDw' Image={UnSoloCuerpo} />
             <PastServiceCard YtId='zRSOnwkee7Y' Image={LlamamientoDeGedeon} />
           </div>
         </div>
@@ -187,44 +182,4 @@ class SermonsMobile extends React.Component {
   }
 }
 
-export default SermonsMobile
-
-/* <div id='carouselExampleIndicators' className='col-sm carousel slide carousel-fade' data-ride='carousel'>
-            <ol className='carousel-indicators'>
-              <li data-target='#carouselExampleIndicators' data-slide-to='0' className='active' />
-              <li data-target='#carouselExampleIndicators' data-slide-to='1' />
-              <li data-target='#carouselExampleIndicators' data-slide-to='2' />
-            </ol>
-            <div className='carousel-inner'>
-              <div className='carousel-item active'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-              <div className='carousel-item'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-              <div className='carousel-item'>
-                <PastServiceCard
-                  className='d-block w-100'
-                  verse='Romanos 8:28'
-                  title='Sermon Title'
-                  fullVerse='Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.'
-                  preacher='Pastor Julio Venegas'
-                  image={PastorJulio}
-                />
-              </div>
-            </div>
-          </div> */
+export default Sermons

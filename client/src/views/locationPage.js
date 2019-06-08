@@ -1,12 +1,12 @@
 import React from 'react'
 import MediaQuery from 'react-responsive'
 
-import { Firebase } from '../../components/google'
-import { ActivityCardMobile } from '../../components/mobile/infoCards'
-import { Navbar } from '../../components/bootstrap'
-import { MapDark } from '../../components/maps'
+import { Firebase } from '../components/google'
+import { ActivityCard } from '../components/infoCards'
+import { Navbar } from '../components/bootstrap'
+import { MapDark } from '../components/maps'
 
-import { AdaSquare, AxelSquare, JulioSquare, MikeSquare, YadySquare, TabernaculoSquare } from '../../images/roundIcons'
+import { AdaSquare, AxelSquare, JulioSquare, MikeSquare, YadySquare, TabernaculoSquare } from '../images/roundIcons'
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
@@ -89,7 +89,7 @@ class LocationPage extends React.Component {
                   margin: 'auto'
                 }}
               >
-                <ActivityCardMobile
+                <ActivityCard
                   Icon={this.renderSwitch(wed.preacher)}
                   Weekday={wed.day}
                   Time={wed.time}
@@ -97,7 +97,7 @@ class LocationPage extends React.Component {
                   WorshipGroup={wed.worshipGroup}
                   Verse={wed.verse}
                 />
-                <ActivityCardMobile
+                <ActivityCard
                   Icon={this.renderSwitch(fri.preacher)}
                   Weekday={fri.day}
                   Time={fri.time}
@@ -105,7 +105,7 @@ class LocationPage extends React.Component {
                   WorshipGroup={fri.worshipGroup}
                   Verse={fri.verse}
                 />
-                <ActivityCardMobile
+                <ActivityCard
                   Icon={this.renderSwitch(sun.preacher)}
                   Weekday={sun.day}
                   Time={sun.time}
@@ -225,7 +225,7 @@ class LocationPage extends React.Component {
                   margin: 'auto'
                 }}
               >
-                <ActivityCardMobile
+                <ActivityCard
                   Icon={this.renderSwitch(wed.preacher)}
                   Weekday={wed.day}
                   Time={wed.time}
@@ -233,7 +233,7 @@ class LocationPage extends React.Component {
                   WorshipGroup={wed.worshipGroup}
                   Verse={wed.verse}
                 />
-                <ActivityCardMobile
+                <ActivityCard
                   Icon={this.renderSwitch(fri.preacher)}
                   Weekday={fri.day}
                   Time={fri.time}
@@ -241,7 +241,7 @@ class LocationPage extends React.Component {
                   WorshipGroup={fri.worshipGroup}
                   Verse={fri.verse}
                 />
-                <ActivityCardMobile
+                <ActivityCard
                   Icon={this.renderSwitch(sun.preacher)}
                   Weekday={sun.day}
                   Time={sun.time}

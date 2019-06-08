@@ -1,14 +1,13 @@
 import React from 'react'
 import BackgroundSlider from 'react-background-slider'
 
-import { Navbar } from '../../components/bootstrap'
-import { MapMobile } from '../../components/mobile/maps'
+import { Navbar } from '../components/bootstrap'
+import { Map } from '../components/maps'
 
-import { Mike, Julio, Axel, Eating, Beach } from '../../images/slideshowBackground'
-import { Interlaced, GrayBg } from '../../images/backgrounds'
-import { TdlIcon, TdlLogo } from '../../images/logosAndIcons'
+import { Mike, Julio, Axel, Eating, Beach } from '../images/slideshowBackground'
+import { Interlaced } from '../images/backgrounds'
 
-import { DownArrow, Cross } from '../../images/logosAndIcons'
+import { DownArrow, Cross } from '../images/logosAndIcons'
 
 class LandingPage extends React.Component {
   state = {
@@ -251,7 +250,7 @@ class LandingPage extends React.Component {
                 justifyContent: 'center'
               }}
             >
-              <MapMobile
+              <Map
                 Style={{
                   height: '450px',
                   width: '90vw'
@@ -350,7 +349,6 @@ class LandingPage extends React.Component {
                       alt=''
                       style={{
                         height: '50px'
-                        // marginTop: '-50px',
                       }}
                     />
                   </div>
