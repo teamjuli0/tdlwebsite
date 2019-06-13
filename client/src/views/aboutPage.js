@@ -12,7 +12,7 @@ class AboutPage extends React.Component {
     isEmptyState: true,
     isBeliefsState: false,
     isValuesState: false,
-    isLeadersState: false,
+    isLeadersState: true,
     currentWidth: '',
     currentHeight: ''
   }

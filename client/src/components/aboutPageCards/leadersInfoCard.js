@@ -1,14 +1,36 @@
 import React from 'react'
 
 const LeadersInfoCard = props => (
-  <div className='col-sm-4'>
+  <div
+    className='col-sm'
+    style={{
+      margin: 'auto',
+      width: '280px',
+      marginBottom: '30px',
+      backgroundColor: 'white',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}
+  >
     <div
+      className='row'
       style={{
-        margin: 'auto',
-        minHeight: '475px'
+        background: `url('${props.LeaderImg}')`,
+        height: '300px',
+        width: '260px',
+        backgroundSize: 'cover',
+        boxShadow: '0 0 10px black',
+        MozBoxShadow: '0 0 10px black',
+        WebkitBoxShadow: '0 0 10px black',
+        border: '4px solid white',
+        borderRadius: '10px',
+        backgroundPosition: 'center',
+        marginTop: '-30px'
       }}
-    >
-      <div
+      alt=''
+    />
+    {/* <div
         className='row'
         style={{
           display: 'flex',
@@ -16,18 +38,6 @@ const LeadersInfoCard = props => (
           alignItems: 'center'
         }}
       >
-        <img
-          src={props.LeaderImg}
-          style={{
-            height: '250px',
-            width: '250px',
-            boxShadow: '0 0 20px gray',
-            MozBoxShadow: '0 0 20px gray',
-            WebkitBoxShadow: '0 0 20px gray',
-            border: '7px solid white'
-          }}
-          alt=''
-        />
       </div>
       <div className='row'>
         <div
@@ -81,8 +91,7 @@ const LeadersInfoCard = props => (
             {props.Verso}
           </p>
         </div>
-      </div>
-    </div>
+      </div> */}
   </div>
 )
 

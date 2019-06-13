@@ -108,7 +108,7 @@ const card = props => (
                   fontWeight: 'bolder',
                   padding: '5px',
                   minHeight: '30px',
-                  width: '120px',
+                  width: '140px',
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
