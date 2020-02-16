@@ -31,7 +31,6 @@ class LocationPage extends React.Component {
 
   componentDidMount() {
     dayRef.on('value', snapshot => {
-      console.log(snapshot.val())
       let wedRef = snapshot.val().wed
       let friRef = snapshot.val().fri
       let sunRef = snapshot.val().sun
@@ -139,8 +138,7 @@ class LocationPage extends React.Component {
                 <div
                   style={{
                     position: 'absolute',
-                    marginTop: '-3px',
-                    paddingLeft: '35px',
+                    marginTop: '250px',
                     zIndex: '1'
                   }}
                 >
@@ -148,7 +146,7 @@ class LocationPage extends React.Component {
                     <a
                       href='https://www.google.com/maps/place/4810+Vermont+Ave,+Los+Angeles,+CA+90037/@33.9991905,-118.2934278,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c8197af14ed5:0xa092388c698f0487!8m2!3d33.9991905!4d-118.2912391'
                       role='button'
-                      class='btn btn-block'
+                      className='btn btn-block'
                       style={{
                         border: '2px solid #8e8e8e',
                         backgroundColor: '#2e333a',
@@ -163,7 +161,7 @@ class LocationPage extends React.Component {
                     <a
                       href='/sermones'
                       role='button'
-                      class='btn btn-block'
+                      className='btn btn-block'
                       style={{
                         border: '2px solid #8e8e8e',
                         backgroundColor: '#2e333a',
@@ -178,7 +176,7 @@ class LocationPage extends React.Component {
                     <a
                       href='/nosotros'
                       role='button'
-                      class='btn btn-block'
+                      className='btn btn-block'
                       style={{
                         border: '2px solid #c4d3e2',
                         backgroundColor: '#3c6ea0',
@@ -192,7 +190,7 @@ class LocationPage extends React.Component {
                   <div className='col-sm'>
                     <button
                       type='button'
-                      class='btn btn-danger btn-block'
+                      className='btn btn-danger btn-block'
                       style={{
                         border: '2px solid #dfa4a4',
                         backgroundColor: '#ab4141',
@@ -209,8 +207,8 @@ class LocationPage extends React.Component {
                     height: '500px',
                     border: '4px solid #465666',
                     borderRadius: '5px',
-                    webkitBoxShadow: '0 0 5px black',
-                    mozBoxShadow: '0 0 5px black',
+                    WebkitBoxShadow: '0 0 5px black',
+                    MozBoxShadow: '0 0 5px black',
                     boxShadow: '0 0 5px black',
                     position: 'relative',
                     zIndex: '0'

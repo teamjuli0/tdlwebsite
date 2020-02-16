@@ -14,8 +14,8 @@ const card = props => (
           marginBottom: '20px',
           borderRadius: '15px',
           backgroundColor: '#2b2c2d',
-          webkitBoxShadow: '0 0 10px black',
-          mozBoxShadow: '0 0 10px black',
+          WebkitBoxShadow: '0 0 10px black',
+          MozBoxShadow: '0 0 10px black',
           boxShadow: '0 0 10px black',
           overflow: 'hidden'
         }}

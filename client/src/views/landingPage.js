@@ -2,7 +2,6 @@ import React from 'react'
 import BackgroundSlider from 'react-background-slider'
 
 import { Navbar } from '../components/bootstrap'
-import { Map } from '../components/maps'
 
 import { Mike, Julio, Axel, Eating, Beach } from '../images/slideshowBackground'
 import { Interlaced } from '../images/backgrounds'

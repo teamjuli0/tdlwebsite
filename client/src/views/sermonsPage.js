@@ -5,7 +5,12 @@ import { YoutubePlayer } from '../components/youtube'
 import { PastServiceCard } from '../components/infoCards'
 import { Navbar } from '../components/bootstrap'
 
-import { FirmesEnMedioDeLaMaldad, ElPetalo, LlamamientoDeGedeon, UnSoloCuerpo } from '../images/youtubeVideoThumbnails'
+import {
+  FirmesEnMedioDeLaMaldad,
+  ElPetalo,
+  LlamamientoDeGedeon,
+  UnSoloCuerpo
+} from '../images/youtubeVideoThumbnails'
 import {
   AxelIcon,
   MikeIcon,
@@ -21,11 +26,6 @@ const database = Firebase.database()
 const dayRef = database.ref('day')
 const xtrRef = database.ref('extras')
 
-console.log(database)
-console.log(dayRef)
-
-console.log(dayRef)
-
 class Sermons extends React.Component {
   state = {
     wed: '',
@@ -36,7 +36,6 @@ class Sermons extends React.Component {
 
   componentDidMount() {
     dayRef.on('value', snapshot => {
-      console.log(snapshot.val())
       let wedRef = snapshot.val().wed
       let friRef = snapshot.val().fri
       let sunRef = snapshot.val().sun
@@ -171,7 +170,10 @@ class Sermons extends React.Component {
           className='container-fluid'
         >
           <div className='row'>
-            <PastServiceCard YtId='rJX0l2DCz5A' Image={FirmesEnMedioDeLaMaldad} />
+            <PastServiceCard
+              YtId='rJX0l2DCz5A'
+              Image={FirmesEnMedioDeLaMaldad}
+            />
             <PastServiceCard YtId='Jx9spiHZXMY' Image={ElPetalo} />
             <PastServiceCard YtId='FrYma3CccDw' Image={UnSoloCuerpo} />
             <PastServiceCard YtId='zRSOnwkee7Y' Image={LlamamientoDeGedeon} />
