@@ -7,6 +7,8 @@ import { Map } from '../components/maps'
 import { Mike, Julio, Axel, Eating, Beach } from '../images/slideshowBackground'
 import { Interlaced } from '../images/backgrounds'
 
+import { NewMap } from '../components/maps'
+
 import { DownArrow, Cross } from '../images/logosAndIcons'
 
 class LandingPage extends React.Component {
@@ -70,13 +72,19 @@ class LandingPage extends React.Component {
             <div className='container-fluid'>
               <div className='row'>
                 <div
-                  className={this.state.currentWidth > 767 && this.state.currentHeight > 500 ? 'col-sm' : 'col-sm-6'}
+                  className={
+                    this.state.currentWidth > 767 &&
+                    this.state.currentHeight > 500
+                      ? 'col-sm'
+                      : 'col-sm-6'
+                  }
                 >
                   <div className='row'>
                     <div className='col-sm'>
                       <p
                         style={
-                          this.state.currentWidth > 767 && this.state.currentHeight > 500
+                          this.state.currentWidth > 767 &&
+                          this.state.currentHeight > 500
                             ? {
                                 fontSize: 20,
                                 paddingTop: '120px'
@@ -91,7 +99,8 @@ class LandingPage extends React.Component {
                       </p>
                       <p
                         style={
-                          this.state.currentWidth > 767 && this.state.currentHeight > 500
+                          this.state.currentWidth > 767 &&
+                          this.state.currentHeight > 500
                             ? {
                                 fontSize: '70px',
                                 paddingTop: '5px'
@@ -151,7 +160,12 @@ class LandingPage extends React.Component {
                 </div>
 
                 <div
-                  className={this.state.currentWidth > 767 && this.state.currentHeight > 500 ? 'col-sm' : 'col-sm-6'}
+                  className={
+                    this.state.currentWidth > 767 &&
+                    this.state.currentHeight > 500
+                      ? 'col-sm'
+                      : 'col-sm-6'
+                  }
                 >
                   <div className='row'>
                     <div
@@ -168,7 +182,8 @@ class LandingPage extends React.Component {
                     >
                       <div
                         style={
-                          this.state.currentWidth > 767 && this.state.currentHeight > 500
+                          this.state.currentWidth > 767 &&
+                          this.state.currentHeight > 500
                             ? {
                                 fontSize: '20px',
                                 fontWeight: 'bold',
@@ -235,30 +250,29 @@ class LandingPage extends React.Component {
             <div
               className='col-sm'
               style={{
+                position: 'relative',
+                zIndex: '0',
                 padding: 0,
                 width: '90vw',
                 maxWidth: '600px',
                 height: '375px',
                 margin: 'auto',
-                overflow: 'hidden',
                 borderRadius: '5px 5px 0 0',
                 boxShadow: '0 0 15px #797f86',
                 MozBoxShadow: '0 0 15px #797f86',
-                WebkitBoxShadow: '0 0 15px #797f86',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
+                WebkitBoxShadow: '0 0 15px #797f86'
               }}
             >
-              <Map
-                Style={{
-                  height: '450px',
-                  width: '90vw'
-                }}
-              />
+              <NewMap />
             </div>
           </div>
-          <div className='row'>
+          <div
+            className='row'
+            style={{
+              position: 'relative',
+              zIndex: '1'
+            }}
+          >
             <div
               className='col-sm'
               style={{
@@ -338,7 +352,8 @@ class LandingPage extends React.Component {
                       width: '70px',
                       borderRadius: '50%',
                       border: '2px solid #dfa4a4',
-                      background: 'linear-gradient(to top right, #bf4949, #5f2424',
+                      background:
+                        'linear-gradient(to top right, #bf4949, #5f2424',
                       boxShadow: '0 0 5px black',
                       MozBoxShadow: '0 0 5px black',
                       WebkitBoxShadow: '0 0 5px black'

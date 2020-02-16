@@ -4,9 +4,16 @@ import MediaQuery from 'react-responsive'
 import { Firebase } from '../components/google'
 import { ActivityCard } from '../components/infoCards'
 import { Navbar } from '../components/bootstrap'
-import { MapDark } from '../components/maps'
+import { NewMap } from '../components/maps'
 
-import { AdaSquare, AxelSquare, JulioSquare, MikeSquare, YadySquare, TabernaculoSquare } from '../images/roundIcons'
+import {
+  AdaSquare,
+  AxelSquare,
+  JulioSquare,
+  MikeSquare,
+  YadySquare,
+  TabernaculoSquare
+} from '../images/roundIcons'
 
 const database = Firebase.database()
 const dayRef = database.ref('day')
@@ -51,9 +58,13 @@ class LocationPage extends React.Component {
         return AdaSquare
       case 'Pastor Axel':
         return AxelSquare
-      case 'Pastor Julio' || 'Pastor Julio Vanegas' || 'Pastor Julio Cesar Vanegas':
+      case 'Pastor Julio' ||
+        'Pastor Julio Vanegas' ||
+        'Pastor Julio Cesar Vanegas':
         return JulioSquare
-      case 'Pastor Mike' || 'Pastor Mike Bayona' || 'Pastor Mike Bayona Lopez':
+      case 'Hermano Mike' ||
+        'Hermano Mike Bayona' ||
+        'Hermano Mike Bayona Lopez':
         return MikeSquare
       case 'Pastora Yady' || 'Pastora Yady Bayona':
         return YadySquare
@@ -128,8 +139,8 @@ class LocationPage extends React.Component {
                 <div
                   style={{
                     position: 'absolute',
-                    marginTop: '20px',
-                    paddingLeft: '0px',
+                    marginTop: '-3px',
+                    paddingLeft: '35px',
                     zIndex: '1'
                   }}
                 >
@@ -195,24 +206,17 @@ class LocationPage extends React.Component {
                 </div>
                 <div
                   style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
                     height: '500px',
-                    overflow: 'hidden',
                     border: '4px solid #465666',
                     borderRadius: '5px',
                     webkitBoxShadow: '0 0 5px black',
                     mozBoxShadow: '0 0 5px black',
-                    boxShadow: '0 0 5px black'
+                    boxShadow: '0 0 5px black',
+                    position: 'relative',
+                    zIndex: '0'
                   }}
                 >
-                  <MapDark
-                    Style={{
-                      width: '100%',
-                      height: '550px'
-                    }}
-                  />
+                  <NewMap />>
                 </div>
               </div>
             </div>

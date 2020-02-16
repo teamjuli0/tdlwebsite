@@ -99,3 +99,14 @@ p {
 .gradientBgAboutPage {
   background-image: linear-gradient(to bottom right, red, yellow);
 }
+
+.leaflet {
+  height: 300px;
+  width: 100%;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
