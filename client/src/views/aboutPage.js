@@ -3,7 +3,11 @@ import MediaQuery from 'react-responsive'
 
 import { Navbar } from '../components/bootstrap'
 import { AboutCard } from '../components/infoCards'
-import { BeliefsCard, ValuesCard, LeadersCard } from '../components/aboutPageCards'
+import {
+  BeliefsCard,
+  ValuesCard,
+  LeadersCard
+} from '../components/aboutPageCards'
 
 import { DownArrow } from '../images/logosAndIcons'
 
@@ -188,20 +192,21 @@ class AboutPage extends React.Component {
                       fontSize: '20px'
                     }}
                   >
-                    Con Dios A Tu Lado No Hay Tribulacion Que Te Pueda Tumbar, Seras Como La Palmera
+                    Con Dios A Tu Lado No Hay Tribulacion Que Te Pueda Tumbar,
+                    Seras Como La Palmera
                   </p>
                 </div>
               </div>
               <div
                 id='carouselExampleControls'
-                class='carousel slide'
+                className='carousel slide'
                 data-ride='carousel'
                 style={{
                   marginTop: '50px'
                 }}
               >
-                <div class='carousel-inner'>
-                  <div class='carousel-item active'>
+                <div className='carousel-inner'>
+                  <div className='carousel-item active'>
                     <AboutCard
                       handleClick={this.triggerBeliefs}
                       CircleLetter='C'
@@ -209,7 +214,7 @@ class AboutPage extends React.Component {
                       ButtonText='Ver Creencias'
                     />
                   </div>
-                  <div class='carousel-item'>
+                  <div className='carousel-item'>
                     <AboutCard
                       handleClick={this.triggerValues}
                       CircleLetter='V'
@@ -217,7 +222,7 @@ class AboutPage extends React.Component {
                       ButtonText='Ver Valores'
                     />
                   </div>
-                  <div class='carousel-item'>
+                  <div className='carousel-item'>
                     <AboutCard
                       handleClick={this.triggerLeaders}
                       CircleLetter='L'
@@ -226,13 +231,29 @@ class AboutPage extends React.Component {
                     />
                   </div>
                 </div>
-                <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'>
-                  <span class='carousel-control-prev-icon' aria-hidden='true' />
-                  <span class='sr-only'>Previous</span>
+                <a
+                  className='carousel-control-prev'
+                  href='#carouselExampleControls'
+                  role='button'
+                  data-slide='prev'
+                >
+                  <span
+                    className='carousel-control-prev-icon'
+                    aria-hidden='true'
+                  />
+                  <span className='sr-only'>Previous</span>
                 </a>
-                <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'>
-                  <span class='carousel-control-next-icon' aria-hidden='true' />
-                  <span class='sr-only'>Next</span>
+                <a
+                  className='carousel-control-next'
+                  href='#carouselExampleControls'
+                  role='button'
+                  data-slide='next'
+                >
+                  <span
+                    className='carousel-control-next-icon'
+                    aria-hidden='true'
+                  />
+                  <span className='sr-only'>Next</span>
                 </a>
               </div>
             </MediaQuery>
@@ -245,7 +266,9 @@ class AboutPage extends React.Component {
                   marginTop: '10vh'
                 }}
               >
-                {!this.state.isEmptyState ? <img width='40' height='40' alt='' src={DownArrow} /> : null}
+                {!this.state.isEmptyState ? (
+                  <img width='40' height='40' alt='' src={DownArrow} />
+                ) : null}
               </div>
             </div>
           </div>
