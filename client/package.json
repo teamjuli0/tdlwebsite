@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^7.8.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "leaflet": "^1.6.0",
     "react": "^16.8.6",
     "react-background-slider": "^1.2.0",
